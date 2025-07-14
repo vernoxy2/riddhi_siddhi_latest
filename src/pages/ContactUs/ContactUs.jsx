@@ -3,13 +3,13 @@ import contactUsImg from "../../assets/Contact/contactHeaderImg.jpg";
 
 const ContactUs = () => {
   return (
-    <div className="w-full min-h-screen items-center justify-center bg-white">
+    <div className="w-full max-w-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
       <img
         src={contactUsImg}
         alt="contactUsImg"
-        className="w-full h-full object-cover"
+        className="w-full max-w-full h-full object-cover"
       />
-      <div className="w-full h-full flex items-center justify-center py-8 px-2">
+      <div className="w-full max-w-full h-full flex items-center justify-center py-8 px-2">
         <div className="w-full max-w-7xl bg-gray-100 rounded-xl shadow-lg p-8 md:p-16 flex flex-col md:flex-row gap-10">
           {/* Left: Info */}
           <div className="flex-1 flex flex-col justify-center border-b md:border-b-0 md:border-r border-black pb-8 md:pb-0 md:pr-10">
@@ -126,10 +126,10 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="w-full h-[500px] my-[30px] flex items-center justify-center py-8 px-2">
+      <div className="w-full max-w-full h-[500px] my-[30px] flex items-center justify-center py-8 px-2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29921.353307015434!2d72.90834896955947!3d20.37591392182745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cf13a80e65d3%3A0xe85f7ecf6591cdfe!2sRiddhi%20Siddhi%20Enterprise!5e0!3m2!1sen!2sin!4v1747803024956!5m2!1sen!2sin"
-          className="w-full h-full"
+          className="w-full max-w-full h-full"
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

@@ -8,8 +8,8 @@ import Washers from '../../components/Product/Washers';
 
 const Products = () => {
   return (
-    <div className='w-full min-h-screen items-center justify-center'>
-      <img src={productsImg} alt="productsImg" className='w-full h-full object-cover' />
+    <div className='w-full max-w-full min-h-screen items-center justify-center overflow-x-hidden'>
+      <img src={productsImg} alt="productsImg" className='w-full max-w-full h-full object-cover' />
       <Nuts />
       <Bolts />
       <Screws />

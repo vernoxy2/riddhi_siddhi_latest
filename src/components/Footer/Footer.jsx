@@ -24,7 +24,7 @@ const Footer = () => {
   const [showProductCategories, setShowProductCategories] = useState(false);
 
   return (
-    <footer className="bg-black text-white w-full pt-10 pb-4 px-2 font-serif">
+    <footer className="bg-black text-white w-full max-w-full pt-10 pb-4 px-2 font-serif overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0">
         {/* Desktop Layout */}
         <div className="hidden lg:grid grid-cols-4 w-full gap-8">

@@ -11,15 +11,17 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="pt-8">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<ContactUs />} />
-        </Routes>
+      <div className="overflow-x-hidden">
+        <div className="pt-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 };

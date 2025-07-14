@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-primary w-full font-serif">
+    <nav className="bg-primary w-full max-w-full font-serif overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -13,7 +13,7 @@ const Navbar = () => {
             <span className="text-white text-3xl font-bold font-serif">Riddhi Siddhi</span>
           </div>
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-12">
+          <div className="hidden lg:flex md:items-center md:space-x-12">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -48,14 +48,15 @@ const Navbar = () => {
               Contact Us
             </NavLink>
             <a
-              href="#" // Replace with actual brochure link
+              href="/brochure.pdf"
+              download
               className="ml-8 px-8 py-3 border-2 border-white text-white text-xl font-semibold rounded-lg transition hover:bg-white hover:text-red-700"
             >
               Download Brochure
             </a>
           </div>
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white focus:outline-none"
@@ -74,7 +75,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-red-700 px-2 pt-2 pb-3 space-y-1">
+        <div className="lg:hidden bg-primary px-2 pt-2 pb-3 space-y-1">
           <NavLink
             to="/"
             className={({ isActive }) =>
