@@ -39,31 +39,31 @@ const features = [
   },
 ];
 
-const Enterprises = () => {
+const   Enterprises = () => {
   return (
     <div className="w-full py-12 bg-white flex flex-col items-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-2 font-serif">Why Choose</h2>
+      <h2 className="text-3xl md:text-[40px] font-bold text-center mb-2 font-serif">Why Choose</h2>
       <h3 className="text-3xl md:text-4xl font-bold text-center mb-4 font-serif">Riddhi Siddhi Enterprise</h3>
-      <p className="text-lg text-center text-gray-700 mb-10 font-serif max-w-4xl">
+      <p className="text-lg text-center text-[#555555] mb-10 font-serif ">
         At Riddhi Siddhi Enterprise, we don’t just supply fasteners — we deliver reliability, quality, and service that helps your business run smoothly.
       </p>
-      <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 px-2">
+      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-4">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="relative bg-white rounded-xl shadow-md flex flex-col items-center p-6 transition hover:shadow-xl h-full overflow-hidden group"
+            className="relative bg-white rounded-xl shadow-md flex flex-col items-center p-8 transition hover:shadow-xl h-[22rem] overflow-hidden group"
           >
             {/* Sliding red background */}
             <div className="absolute left-0 bottom-0 w-full h-0 bg-primary z-0 transition-all duration-500 group-hover:h-full"></div>
-            <div className="relative z-10 flex flex-col items-center h-full">
+            <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-4 w-full">
               <img
                 src={feature.icon}
                 alt={feature.title}
-                className="w-20 h-20 mb-4 object-contain select-none transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
+                className="w-20 h-20 object-contain select-none transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 m-0 p-0"
                 draggable="false"
               />
-              <h4 className="text-xl font-bold text-center mb-2 font-serif transition-colors duration-300 group-hover:text-white">{feature.title}</h4>
-              <p className="text-base text-center font-serif transition-colors duration-300 group-hover:text-white">{feature.desc}</p>
+              <h4 className="text-xl font-bold text-center font-serif transition-colors duration-300 group-hover:text-white m-0 p-0">{feature.title}</h4>
+              <p className="text-lg text-[#555555] text-center font-serif transition-colors duration-300 group-hover:text-white m-0 p-0">{feature.desc}</p>
             </div>
           </div>
         ))}

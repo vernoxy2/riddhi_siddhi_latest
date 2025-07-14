@@ -41,13 +41,13 @@ const CounterCircle = ({ title, end }) => {
 
 const Counter = () => {
   return (
-    <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-8">
+    <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-40">
       {/* Left: Text and Counters */}
       <div className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-2 text-center lg:text-left">
+        <h2 className="text-2xl md:text-[34px] font-bold font-serif mb-2 text-center lg:text-left">
           Built on Strength, Proven by Numbers
         </h2>
-        <p className="text-lg text-gray-700 mb-8 font-serif text-center lg:text-left max-w-md">
+        <p className="text-xl text-[#555555] mb-8 font-serif text-center lg:text-left max-w-md">
           Our products are engineered for durability, trusted by thousands across industries. Backed by data, we deliver consistent performance you can count on.
         </p>
         <div className="flex flex-wrap gap-6 justify-center lg:justify-start w-full">

@@ -14,7 +14,7 @@ const Products = () => {
       <Bolts />
       <Screws />
       <Washers />
-      <div className='lg:space-y-16 space-y-8 lg:py-12 font-serif'>
+      <div className='lg:space-y-16 space-y-8 lg:py-12 font-serif container'>
         <div className='items-center justify-center'>
           <h1 className='text-center text-2xl md:text-3xl font-bold'>THREADED RODS & STUDS</h1>
           <p className='text-center text-lg md:text-xl md:mx-5'>We supply high-quality threaded rods and studs designed for reliable performance in structural, mechanical, and industrial applications. Available in a range of lengths, diameters, and materials such as stainless steel, carbon steel, and galvanized finishes, these fasteners are ideal for tensioning and anchoring tasks. Our threaded rods offer excellent strength and versatility, making them a go-to solution for construction, plumbing, and electrical projects. Whether you need full-length rods or custom-cut studs, we deliver precision and durability you can trust.</p>

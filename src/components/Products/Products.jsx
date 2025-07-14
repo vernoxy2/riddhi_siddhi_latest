@@ -39,20 +39,20 @@ const products = [
   },
 ];
 
-const Products = () => {
+const  Products = () => {
   return (
     <div className="w-full flex flex-col items-center py-12 px-2 md:px-0 bg-white">
-      <h2 className="text-5xl font-bold text-primary mb-2 font-serif text-center">Our Product Range</h2>
-      <p className="text-xl text-gray-700 mb-10 text-center font-serif max-w-3xl">
+      <h2 className="text-4xl lg:text-6xl font-bold text-primary mb-2 font-serif text-center">Our Product Range</h2>
+      <p className="text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif">
         We offer a comprehensive selection of industrial fasteners, available in multiple sizes, grades, and coatings
       </p>
-      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-28">
         {products.map((product, idx) => (
           <div
             key={idx}
             className="bg-white rounded shadow-lg flex flex-col items-center overflow-hidden hover:shadow-2xl transition group"
           >
-            <div className="relative w-full h-72 flex items-center justify-center bg-gray-100">
+            <div className="relative w-full h-76 flex items-center justify-center bg-gray-100">
               <img
                 src={product.img}
                 alt={product.title}

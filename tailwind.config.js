@@ -1,6 +1,5 @@
 
 /** @type {import('tailwindcss').Config} */
-import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -20,10 +19,12 @@ export default {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+        'xs': '526px',
       },
     },
     extend: {
       fontFamily: {
+        serif: ["Noto Serif", "serif"],
         kulim: ['"Kulim Park"', "sans-serif"],
       },
       colors: {

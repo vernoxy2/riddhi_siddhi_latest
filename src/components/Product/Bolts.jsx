@@ -13,12 +13,12 @@ const bolts = [
 
 const Bolts = () => {
   return (
-    <div className="w-full py-12 bg-white flex flex-col items-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 font-serif">BOLTS</h2>
-      <p className="text-lg text-center text-gray-800 mb-10 font-serif max-w-5xl">
+    <div className="w-full py-12 bg-white flex flex-col items-center container">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif">BOLTS</h2>
+      <p className="text-xl text-center text-gray-800 mb-10 font-serif">
         Our extensive range of bolts includes hex bolts, carriage bolts, eye bolts, and structural bolts, ideal for both heavy-duty and general-purpose fastening. Manufactured for strength, durability, and resistance to corrosion, our bolts are available in various finishes and thread types. We supply bulk quantities for construction, machinery, and fabrication projects, with quality and consistency you can count on.
       </p>
-      <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2">
+      <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:px-10">
         {bolts.map((bolt, idx) => (
           <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
             <div className="bg-black py-6 text-center">

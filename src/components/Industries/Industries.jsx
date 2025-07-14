@@ -63,7 +63,7 @@ const scrollingIndustries = [...industries, ...industries];
 const Industries = () => {
   return (
     <div className="w-full py-12 bg-white">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 font-serif">Industries We Serve</h2>
+      <h2 className="text-4xl md:text-[40px] font-bold text-center mb-8 font-serif">Industries We Serve</h2>
       <div className="border-t-2 border-b-2 border-primary py-8">
         <div className="relative w-full overflow-hidden">
           <div
@@ -78,7 +78,7 @@ const Industries = () => {
                 <img
                   src={industry.icon}
                   alt={industry.title}
-                  className="w-20 h-20 mb-4 object-contain select-none"
+                  className="w-20 h-20 mb-4 object-contain select-none bg-transparent"
                   draggable="false"
                 />
                 <h3 className="text-xl font-bold text-center text-primary font-serif mb-1">{industry.title}</h3>

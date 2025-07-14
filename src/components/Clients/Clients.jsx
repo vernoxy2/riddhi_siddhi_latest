@@ -24,13 +24,13 @@ const testimonials = [
 
 const Clients = () => {
   return (
-    <div className="w-full py-16 bg-white flex flex-col items-center">
-      <h3 className="text-xl font-bold text-center mb-2 font-serif uppercase tracking-widest">Testimonials</h3>
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 font-serif">WHAT CLIENTS SAY</h2>
-      <p className="text-lg text-center text-gray-700 mb-12 font-serif max-w-4xl">
+    <div className="w-full container py-16 bg-white flex flex-col items-center">
+      <h3 className="text-[25px] font-bold text-center mb-2 font-serif uppercase tracking-widest">Testimonials</h3>
+      <h2 className="text-4xl md:text-[40px] font-bold text-center mb-6 font-serif">WHAT CLIENTS SAY</h2>
+      <p className="text-[25px] text-center text-[#555555] mb-12 font-serif ">
         We place huge value on strong relationships and have seen the benefit they bring to our business . Customer feedback is vital in helping us to get it right.
       </p>
-      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
+      <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-20 lg:px-10">
         {testimonials.map((testimonial, idx) => (
           <div
             key={idx}
@@ -42,9 +42,9 @@ const Clients = () => {
               className="w-24 h-24 rounded-full object-cover mb-6 border-4 border-white shadow"
               draggable="false"
             />
-            <p className="text-xl text-gray-800 font-serif mb-6">{testimonial.quote}</p>
-            <span className="text-xl font-bold text-primary font-serif mb-1">{testimonial.name}</span>
-            <span className="text-lg font-serif text-black">{testimonial.role}</span>
+            <p className="text-2xl text-[#555555] font-serif mb-6">{testimonial.quote}</p>
+            <span className="text-2xl font-bold text-primary font-serif mb-1">{testimonial.name}</span>
+            <span className="text-2xl font-serif text-black">{testimonial.role}</span>
           </div>
         ))}
       </div>

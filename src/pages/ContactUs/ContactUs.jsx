@@ -126,7 +126,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-full h-[500px] my-[30px] flex items-center justify-center py-8 px-2">
+      <div className="w-full container h-[500px] my-[30px] flex items-center justify-center py-8 px-2 ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29921.353307015434!2d72.90834896955947!3d20.37591392182745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cf13a80e65d3%3A0xe85f7ecf6591cdfe!2sRiddhi%20Siddhi%20Enterprise!5e0!3m2!1sen!2sin!4v1747803024956!5m2!1sen!2sin"
           className="w-full max-w-full h-full"
