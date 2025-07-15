@@ -3,10 +3,11 @@ import aboutUsImage from "../../assets/About/aboutHeaderImg.png";
 import img1 from "../../assets/About/img1.png";
 import img2 from "../../assets/About/img2.png";
 import img3 from "../../assets/About/img3.png";
-import vision from "../../assets/About/vision.png"
-import mission from "../../assets/About/mission.png"
-import core from "../../assets/About/core.png"
+import vision from "../../assets/About/vision.png";
+import mission from "../../assets/About/mission.png";
+import core from "../../assets/About/core.png";
 import Work from "../../components/Abouts/Work";
+import Assurance from "../../components/Abouts/Assurance";
 
 const aboutCards = [
   {
@@ -91,7 +92,7 @@ const AboutUs = () => {
           industries like construction, engineering, and OEMs across India —
           with ready stock, reliable quality, and timely delivery.
         </p>
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 lg:py-12">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-16 py-12">
           {aboutCards.map((card, idx) => {
             const isHovered = hoveredIdx === idx;
             return (
@@ -133,7 +134,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full py-12">
+      <div className="w-full py-12 container">
         <h2 className="text-3xl md:text-4xl font-bold text-center font-serif mb-2">
           Company Mission, Vision and Values
         </h2>
@@ -164,8 +165,17 @@ const AboutUs = () => {
         </div>
       </div>
 
-
       <Work />
+      <Assurance />
+
+      <section className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12">
+        <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
+          Your Vision, Our Expertise – Free Quotes at Your Fingertips!
+        </h2>
+        <button className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
+          GET A QUOTE
+        </button>
+      </section>
     </div>
   );
 };

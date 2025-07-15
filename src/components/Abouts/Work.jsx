@@ -49,13 +49,13 @@ const Work = () => {
         {workSteps.map((step, idx) => (
           <div
             key={idx}
-            className="bg-[#fafafa] w-full sm:w-[300px] md:w-[280px] lg:w-[260px] h-[370px] rounded-lg shadow-md flex flex-col items-center justify-center p-5 gap-[20px] relative z-[1] overflow-hidden transition-colors duration-300 hover:shadow-xl"
+            className="bg-[#fafafa] w-full sm:w-[300px] md:w-[280px] lg:w-[260px] h-[370px] rounded-lg shadow-md flex flex-col items-center justify-center p-5 pt-0 gap-[10px] relative z-[1] overflow-hidden transition-colors duration-300 hover:shadow-xl container"
           >
-            <img src={step.img} alt={step.title} className="w-14 h-14 object-contain" />
-            <h3 className="text-lg font-bold text-center text-primary font-serif">{step.title}</h3>
-            <p className="text-center text-sm text-gray-700 px-1">{step.desc}</p>
-            <div className="absolute left-0 bottom-4 flex items-center gap-x-2">
-             <img src={WeWork} alt="" className='h-16 -translate-x-4'/>
+            <img src={step.img} alt={step.title} className="w-16 h-16 object-contain" />
+            <h3 className="text-xl font-bold text-center text-primary font-serif">{step.title}</h3>
+            <p className="text-center text-lg text-gray-700 px-1">{step.desc}</p>
+            <div className="absolute left-0 bottom-1 flex items-center gap-x-2">
+             <img src={WeWork} alt="" className='h-14 -translate-x-4'/>
              <p className=' text-4xl text-primary font-extrabold'>{step.number}</p>
             </div>
           </div>
