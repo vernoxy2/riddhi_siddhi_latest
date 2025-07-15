@@ -7,18 +7,16 @@ import Enterprises from "../../components/Enterprises/Enterprises";
 import Counter from "../../components/Counter/Counter";
 import Clients from "../../components/Clients/Clients";
 import Products from "../../components/Products/Products";
-import ourStrength1 from "../../assets/Home/ourStrength1.png"
-import ourStrength2 from "../../assets/Home/ourStrength2.png"
-import ourStrength3 from "../../assets/Home/ourStrength3.png"
-import ourStrength4 from "../../assets/Home/ourStrength4.png"
+import ourStrength1 from "../../assets/Home/ourStrength1.png";
+import ourStrength2 from "../../assets/Home/ourStrength2.png";
+import ourStrength3 from "../../assets/Home/ourStrength3.png";
+import ourStrength4 from "../../assets/Home/ourStrength4.png";
 
 const Home = () => {
   return (
     <>
-      
-
       {/* Desktop (above 526px): text overlay on background image */}
-      <div
+      {/* <div
         className="relative w-full max-w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
@@ -28,6 +26,23 @@ const Home = () => {
           </h1>
           <p className="text-base sm:text-lg md:text-2xl mb-4 sm:mb-8 text-black font-serif">
             Explore Our Range of Industrial Nuts, Bolts & Screws in MS, SS & Brass.
+          </p>
+          <button className="bg-primary hover:bg-red-600 text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition">
+            Get Quote
+          </button>
+        </div>
+      </div> */}
+      <div
+        className="relative w-full max-w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
+        style={{ backgroundImage: `url(${homeHeader})` }}
+      >
+        <div className="ml-2 sm:ml-8 md:ml-16 max-w-xl bg-black bg-opacity-0 p-4 sm:p-6 md:p-8 rounded-lg flex flex-col items-start w-full">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4 text-black font-serif">
+            Your Trusted Stockist for Industrial Fasteners
+          </h1>
+          <p className="text-base sm:text-lg md:text-2xl mb-4 sm:mb-8 text-black font-serif">
+            Explore Our Range of Industrial Nuts, Bolts & Screws in MS, SS &
+            Brass.
           </p>
           <button className="bg-primary hover:bg-red-600 text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition">
             Get Quote
@@ -66,21 +81,33 @@ const Home = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2 sm:gap-y-4 w-full text-start">
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🏠</span> */}
-                <img src={ourStrength1} alt="ourStrength1" className="w-10 h-10" />
+                <img
+                  src={ourStrength1}
+                  alt="ourStrength1"
+                  className="w-10 h-10"
+                />
                 <span className="text-base sm:text-2xl text-[#555555]">
                   Ready stock of 500+ SKUs
                 </span>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🧱</span> */}
-                <img src={ourStrength2} alt="ourStrength2" className="w-10 h-10" />
+                <img
+                  src={ourStrength2}
+                  alt="ourStrength2"
+                  className="w-10 h-10"
+                />
                 <span className="text-base sm:text-2xl text-[#555555]">
                   Bulk supply with flexible MOQs
                 </span>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🪓</span> */}
-                <img src={ourStrength3} alt="ourStrength3" className="w-10 h-10" />
+                <img
+                  src={ourStrength3}
+                  alt="ourStrength3"
+                  className="w-10 h-10"
+                />
                 <span className="text-base sm:text-2xl text-[#555555]">
                   Materials including Mild Steel, Stainless Steel (304/316),
                   Brass, and Galvanized coatings
@@ -88,7 +115,11 @@ const Home = () => {
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🏢</span> */}
-                <img src={ourStrength4} alt="ourStrength4" className="w-10 h-10" />
+                <img
+                  src={ourStrength4}
+                  alt="ourStrength4"
+                  className="w-10 h-10"
+                />
                 <span className="text-base sm:text-2xl text-[#555555]">
                   Prompt delivery from our Vapi warehouse
                 </span>
@@ -98,7 +129,6 @@ const Home = () => {
         </div>
       </div>
 
-      
       <Products />
       <Industries />
       <Enterprises />

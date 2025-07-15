@@ -40,7 +40,7 @@ const Assurance = () => {
     <div className="w-full  py-8 md:py-12 bg-white">
       <div className=" ">
         <div className="text-left mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-2xl md:text-4xl font-bold">
             <span className="bg-primary text-white px-3 py-1 shadow-md">
               Sourcing &amp; Quality{" "}
               <span className="text-white font-light">Assurance</span>
@@ -55,12 +55,12 @@ const Assurance = () => {
             deeply committed to sourcing and delivering only the best.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 sm:gap-y-14 max-w-7xl mx-auto py-5 md:py-12 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 sm:gap-y-14 max-w-7xl mx-auto py-5 md:py-12">
           {assuranceData.map((item, idx) => (
             <div
               key={idx}
               className={
-                "group rounded-xl shadow-md flex flex-col h-full bg-white transition-all duration-300 hover:scale-105 mb-6"
+                "group rounded-xl shadow-md flex flex-col h-full bg-white transition-all duration-300 hover:scale-105 mb-6 border-2"
               }
             >
               <div className="flex items-center justify-between p-4 ">
