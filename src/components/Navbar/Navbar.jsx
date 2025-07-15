@@ -118,7 +118,8 @@ const Navbar = () => {
             Contact Us
           </NavLink>
           <a
-            href="#" // Replace with actual brochure link
+            href="/brochure.pdf"
+            download
             className="block mt-2 px-8 py-3 border-2 border-white text-white text-lg font-semibold rounded-lg transition hover:bg-white hover:text-red-700 text-center"
           >
             Download Brochure
