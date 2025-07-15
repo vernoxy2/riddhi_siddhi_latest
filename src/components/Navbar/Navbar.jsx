@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +12,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-white text-3xl font-bold font-serif">Riddhi Siddhi</span>
+            <NavLink to="/" className="focus:outline-none">
+              <span className="text-white text-3xl font-bold font-serif cursor-pointer">Riddhi Siddhi</span>
+            </NavLink>
           </div>
           {/* Desktop Menu */}
           <div className="hidden lg:flex md:items-center md:space-x-12">
@@ -123,6 +127,16 @@ const Navbar = () => {
       )}
     </nav>
   );
+};
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 };
 
 export default Navbar;

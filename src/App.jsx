@@ -6,10 +6,12 @@ import AboutUs from './pages/AboutsUs/AboutUs';
 import Products from './pages/Products/Products';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <div className="overflow-x-hidden">
         <div className="">
