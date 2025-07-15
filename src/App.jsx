@@ -12,7 +12,7 @@ const App = () => {
     <Router>
       <Navbar />
       <div className="overflow-x-hidden">
-        <div className="pt-8">
+        <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />

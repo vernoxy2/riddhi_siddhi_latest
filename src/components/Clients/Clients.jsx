@@ -30,7 +30,7 @@ const Clients = () => {
       <p className="text-[25px] text-center text-[#555555] mb-12 font-serif ">
         We place huge value on strong relationships and have seen the benefit they bring to our business . Customer feedback is vital in helping us to get it right.
       </p>
-      <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-20 lg:px-10">
+      <div className="w-full gap-9  grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-20 lg:px-10">
         {testimonials.map((testimonial, idx) => (
           <div
             key={idx}

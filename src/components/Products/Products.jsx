@@ -56,7 +56,7 @@ const  Products = () => {
               <img
                 src={product.img}
                 alt={product.title}
-                className="object-cover w-full h-full group-hover:scale-105 transition duration-300"
+                className="object-cover w-full h-full group-hover:scale-100 transition duration-300"
               />
               {/* Overlay for hover */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 px-4">

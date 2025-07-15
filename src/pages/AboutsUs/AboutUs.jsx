@@ -92,7 +92,7 @@ const AboutUs = () => {
           industries like construction, engineering, and OEMs across India —
           with ready stock, reliable quality, and timely delivery.
         </p>
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-16 py-12">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-28 py-12">
           {aboutCards.map((card, idx) => {
             const isHovered = hoveredIdx === idx;
             return (
@@ -134,14 +134,15 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full py-12 container">
+      <div className="w-full py-12 ">
         <h2 className="text-3xl md:text-4xl font-bold text-center font-serif mb-2">
           Company Mission, Vision and Values
         </h2>
         <p className="text-center text-lg mb-10">
           Defining our mission, vision, and values for purposeful growth.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-start gap-8">
+        {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8"> */}
+        <div className="flex flex-wrap justify-center gap-6 px-4">
           {missionVisionValues.map((item, idx) => (
             <div
               key={idx}

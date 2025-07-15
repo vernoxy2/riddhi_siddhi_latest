@@ -36,7 +36,7 @@ const Home = () => {
       </div>
 
       <div className="w-full container flex flex-col items-center py-8 sm:py-12 px-2 sm:px-4 md:px-0 overflow-x-hidden">
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-y-6 items-center">
           {/* Image Section */}
           <div className="flex justify-center">
             <img
@@ -46,11 +46,11 @@ const Home = () => {
             />
           </div>
           {/* Text Section */}
-          <div className="flex flex-col justify-center items-start w-full px-2 sm:px-0">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-6 font-serif text-center md:text-left w-full">
+          <div className="flex flex-col gap-y-4 justify-center items-center lg:items-start w-full px-2 sm:px-0 text-center lg:text-start">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-6 font-serif w-full">
               Who We Are
             </h2>
-            <p className="text-base sm:text-2xl text-[#555555] mb-2 sm:mb-4 font-serif">
+            <p className="text-base sm:text-2xl text-[#555555] mb-2 sm:mb-4 font-serif ">
               Riddhi Siddhi Enterprise is a trusted stockist and wholesaler of
               industrial fasteners, based in Vapi, Gujarat. We supply a wide
               range of nuts, bolts, screws, washers, and threaded rods to
@@ -63,7 +63,7 @@ const Home = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-2 sm:mb-4 font-serif">
               Our Strength Lies In
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2 sm:gap-y-4 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2 sm:gap-y-4 w-full text-start">
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🏠</span> */}
                 <img src={ourStrength1} alt="ourStrength1" className="w-10 h-10" />

@@ -55,7 +55,7 @@ const Assurance = () => {
             deeply committed to sourcing and delivering only the best.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 sm:gap-y-10 max-w-7xl mx-auto md:py-12 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 sm:gap-y-14 max-w-7xl mx-auto py-5 md:py-12 ">
           {assuranceData.map((item, idx) => (
             <div
               key={idx}
@@ -70,7 +70,7 @@ const Assurance = () => {
                   </h3>
                 </div>
                 <div
-                  className={`w-16 h-16 rounded-full flex items-center justify-center shadow-md -mt-8 bg-[#F0F0F0] group-hover:bg-primary transition-colors duration-300`}
+                  className={`w-20 h-20 p-4 rounded-full flex items-center justify-center shadow-md -mt-8 bg-[#F0F0F0] group-hover:bg-primary transition-colors duration-300`}
                 >
                   <img
                     src={item.img}

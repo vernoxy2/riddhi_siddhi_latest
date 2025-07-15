@@ -1,5 +1,8 @@
 import React from "react";
 import contactUsImg from "../../assets/Contact/contactHeaderImg.jpg";
+import { IoCall } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -24,7 +27,7 @@ const ContactUs = () => {
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
                 {/* Phone icon */}
-                <svg
+                {/* <svg
                   className="w-6 h-6 inline"
                   fill="none"
                   stroke="currentColor"
@@ -32,14 +35,15 @@ const ContactUs = () => {
                   viewBox="0 0 24 24"
                 >
                   <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z" />
-                </svg>
+                </svg> */}
+                <IoCall className="w-6 h-6"/>
               </span>
               9924155593
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
                 {/* Email icon */}
-                <svg
+                {/* <svg
                   className="w-6 h-6 inline"
                   fill="none"
                   stroke="currentColor"
@@ -48,14 +52,15 @@ const ContactUs = () => {
                 >
                   <path d="M4 4h16v16H4z" stroke="none" />
                   <polyline points="22,6 12,13 2,6" />
-                </svg>
+                </svg> */}
+                <IoMdMail className="w-6 h-6"/>
               </span>
               rsenterprice4275@gmail.com
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
                 {/* Location icon */}
-                <svg
+                {/* <svg
                   className="w-6 h-6 inline"
                   fill="none"
                   stroke="currentColor"
@@ -64,7 +69,8 @@ const ContactUs = () => {
                 >
                   <path d="M12 21c-4.418 0-8-5.373-8-10A8 8 0 0 1 20 11c0 4.627-3.582 10-8 10z" />
                   <circle cx="12" cy="11" r="3" />
-                </svg>
+                </svg> */}
+                <FaLocationDot className="w-6 h-6"/>
               </span>
               <span className="text-base md:text-lg">
                 SHOP NO. 7, ZEEL IND. COMPUND, NEAR MAMTA WEIGH BRIDGE COMPUND,
