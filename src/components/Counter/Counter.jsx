@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import counterImg from '../../assets/Home/counterImg.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const counters = [
   { title: 'Title1', end: 1200 },
@@ -40,10 +42,18 @@ const CounterCircle = ({ title, end }) => {
 };
 
 const Counter = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false,     // whether animation should happen only once
+      delay:200,
+    });
+  }, []);
   return (
     <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-40">
       {/* Left: Text and Counters */}
-      <div className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full">
+      <div className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full" data-aos="fade-right" data-aos-duration="2000">
         <h2 className="text-2xl md:text-[34px] font-bold font-serif mb-2 text-center lg:text-left">
           Built on Strength, Proven by Numbers
         </h2>
@@ -57,7 +67,7 @@ const Counter = () => {
         </div>
       </div>
       {/* Right: Image */}
-      <div className="flex-1 flex justify-center items-center px-4 lg:px-0 w-full mb-8 lg:mb-0">
+      <div className="flex-1 flex justify-center items-center px-4 lg:px-0 w-full mb-8 lg:mb-0" data-aos="fade-left" data-aos-duration="2500">
         <div className="w-full max-w-xl aspect-video relative min-w-0">
           <img
             src={counterImg}

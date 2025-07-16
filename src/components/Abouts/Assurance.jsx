@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import partnership from "../../assets/About/partnerrship.png";
 import labeling from "../../assets/About/labeling.png";
 import inspection from "../../assets/About/inspection.png";
 import material from "../../assets/About/material.png";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const assuranceData = [
   {
@@ -36,18 +39,26 @@ const assuranceData = [
 ];
 
 const Assurance = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false, // whether animation should happen only once
+      delay: 200,
+    });
+  }, []);
+
   return (
     <div className="w-full  py-8 md:py-12 bg-white">
       <div className=" ">
         <div className="text-left mb-8">
-          <h2 className="text-2xl md:text-4xl font-bold">
+          <h2 className="text-2xl md:text-4xl font-bold" data-aos="fade-right" data-aos-duration="2300">
             <span className="bg-primary text-white px-3 py-1 shadow-md">
               Sourcing &amp; Quality{" "}
               <span className="text-white font-light">Assurance</span>
             </span>
           </h2>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000">
           <p className="text-center mt-6 text-[#000000] text-base md:text-lg max-w-6xl mx-auto container">
             At Riddhi Siddhi Enterprise, quality is the cornerstone of
             everything we do. We understand that the strength and reliability of
@@ -61,7 +72,9 @@ const Assurance = () => {
               key={idx}
               className={
                 "group rounded-xl shadow-md flex flex-col h-full bg-white transition-all duration-300 hover:scale-105 mb-6 border-2"
-              }
+              } data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
             >
               <div className="flex items-center justify-between p-4 ">
                 <div>

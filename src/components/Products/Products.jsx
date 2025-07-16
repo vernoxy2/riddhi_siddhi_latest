@@ -1,50 +1,77 @@
-import React from 'react';
-import nutImg from '../../assets/Home/nutImg.jpg';
-import boltImg from '../../assets/Home/boltImg.jpg';
-import screwImg from '../../assets/Home/screwImg.jpg';
-import washerImg from '../../assets/Home/washerImg.jpg';
-import threadedRodsImg from '../../assets/Home/threadedRodsImg.jpg';
-import customFastenersImg1 from '../../assets/Home/customFastenersImg1.jpg';
+import React, { useEffect } from "react";
+import nutImg from "../../assets/Home/nutImg.jpg";
+import boltImg from "../../assets/Home/boltImg.jpg";
+import screwImg from "../../assets/Home/screwImg.jpg";
+import washerImg from "../../assets/Home/washerImg.jpg";
+import threadedRodsImg from "../../assets/Home/threadedRodsImg.jpg";
+import customFastenersImg1 from "../../assets/Home/customFastenersImg1.jpg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const products = [
   {
-    title: 'NUTS',
+    title: "NUTS",
     img: nutImg,
-    description: 'We offer a wide variety of nuts, including hex nuts, lock nuts, wing nuts, and more, available in multiple sizes and materials.'
+    description:
+      "We offer a wide variety of nuts, including hex nuts, lock nuts, wing nuts, and more, available in multiple sizes and materials.",
   },
   {
-    title: 'BOLTS',
+    title: "BOLTS",
     img: boltImg,
-    description: 'Our bolts range includes hex bolts, carriage bolts, and more, suitable for diverse industrial applications.'
+    description:
+      "Our bolts range includes hex bolts, carriage bolts, and more, suitable for diverse industrial applications.",
   },
   {
-    title: 'SCREWS',
+    title: "SCREWS",
     img: screwImg,
-    description: 'Choose from machine screws, self-tapping screws, and other types, in various sizes and finishes.'
+    description:
+      "Choose from machine screws, self-tapping screws, and other types, in various sizes and finishes.",
   },
   {
-    title: 'WASHERS',
+    title: "WASHERS",
     img: washerImg,
-    description: 'We supply plain, spring, and special washers to meet your fastening needs.'
+    description:
+      "We supply plain, spring, and special washers to meet your fastening needs.",
   },
   {
-    title: 'THREADED RODS & STUDS',
+    title: "THREADED RODS & STUDS",
     img: threadedRodsImg,
-    description: 'Threaded rods and studs are available in different lengths, diameters, and materials.'
+    description:
+      "Threaded rods and studs are available in different lengths, diameters, and materials.",
   },
   {
-    title: 'Custom Fasteners – As per drawing / specification',
+    title: "Custom Fasteners – As per drawing / specification",
     img: customFastenersImg1,
-    description: 'We manufacture and supply custom fasteners as per your drawing or specification.'
+    description:
+      "We manufacture and supply custom fasteners as per your drawing or specification.",
   },
 ];
 
-const  Products = () => {
+const Products = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false, // whether animation should happen only once
+      delay: 200,
+    });
+  }, []);
   return (
     <div className="w-full flex flex-col items-center py-12 px-2 md:px-0 bg-white">
-      <h2 className="text-4xl lg:text-6xl font-bold text-primary mb-2 font-serif text-center">Our Product Range</h2>
-      <p className="text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif">
-        We offer a comprehensive selection of industrial fasteners, available in multiple sizes, grades, and coatings
+      <h2
+        className="text-4xl lg:text-6xl font-bold text-primary mb-2 font-serif text-center"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Our Product Range
+      </h2>
+      <p
+        className="text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif"
+        data-aos="fade-down"
+        data-aos-duration="2500"
+      >
+        We offer a comprehensive selection of industrial fasteners, available in
+        multiple sizes, grades, and coatings
       </p>
       <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-28">
         {products.map((product, idx) => (
@@ -57,6 +84,8 @@ const  Products = () => {
                 src={product.img}
                 alt={product.title}
                 className="object-cover w-full h-full group-hover:scale-100 transition duration-300"
+                data-aos="flip-left"
+                data-aos-duration="2500"
               />
               {/* Overlay for hover */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 px-4">

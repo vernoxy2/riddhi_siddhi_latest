@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import aboutUsImage from "../../assets/About/aboutHeaderImg.png";
 import img1 from "../../assets/About/img1.png";
 import img2 from "../../assets/About/img2.png";
@@ -8,6 +8,9 @@ import mission from "../../assets/About/mission.png";
 import core from "../../assets/About/core.png";
 import Work from "../../components/Abouts/Work";
 import Assurance from "../../components/Abouts/Assurance";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const aboutCards = [
   {
@@ -73,6 +76,14 @@ const missionVisionValues = [
 ];
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false, // whether animation should happen only once
+      delay: 200,
+    });
+  }, []);
+
   const [hoveredIdx, setHoveredIdx] = useState(null);
   return (
     <div className="w-full max-w-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
@@ -80,12 +91,19 @@ const AboutUs = () => {
         src={aboutUsImage}
         alt="aboutUsImage"
         className="w-full max-w-full h-full object-cover"
+        data-aos="fade-up" data-aos-duration="1500"
       />
       <div className="container mx-auto px-2 py-8 flex flex-col items-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-center font-serif mb-4">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center font-serif mb-4"
+          data-aos="fade-up" data-aos-duration="1700"
+        >
           About Us
         </h2>
-        <p className="text-base md:text-lg text-center mb-10 font-serif">
+        <p
+          className="text-base md:text-lg text-center mb-10 font-serif"
+          data-aos="fade-down" data-aos-duration="1900"
+        >
           Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted
           stockist and wholesaler of high-quality industrial fasteners. We
           supply a wide range of nuts, bolts, screws, and custom fasteners to
@@ -110,9 +128,13 @@ const AboutUs = () => {
                     src={card.img}
                     alt={card.title}
                     className="w-[100px] h-[100px] object-contain"
+                    data-aos="zoom-in" data-aos-duration="1500"
                   />
                 </div>
-                <div className="mt-16 flex flex-col items-center">
+                <div
+                  className="mt-16 flex flex-col items-center"
+                  data-aos="fade-left" data-aos-duration="1700"
+                >
                   <h3
                     className={`text-2xl font-bold font-serif mb-4 text-center transition-colors duration-200 ${
                       isHovered ? "text-white" : "text-primary"
@@ -135,10 +157,13 @@ const AboutUs = () => {
       </div>
 
       <div className="w-full py-12 ">
-        <h2 className="text-3xl md:text-4xl font-bold text-center font-serif mb-2">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center font-serif mb-2"
+          data-aos="fade-up" data-aos-duration="1500"
+        >
           Company Mission, Vision and Values
         </h2>
-        <p className="text-center text-lg mb-10">
+        <p className="text-center text-lg mb-10" data-aos="fade-down" data-aos-duration="1700">
           Defining our mission, vision, and values for purposeful growth.
         </p>
         {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8"> */}
@@ -147,13 +172,14 @@ const AboutUs = () => {
             <div
               key={idx}
               className="bg-white rounded-2xl shadow-lg flex flex-col items-center overflow-hidden transition p-6"
+              data-aos="flip-right" data-aos-duration="1900"
               style={{ width: "350px", minHeight: "500px" }} // You can adjust these values as needed
             >
               <img
                 src={item.img}
                 alt={item.title}
                 className="object-contain max-w-full"
-                style={{ maxHeight: "200px" }} // Optional: control image height
+                style={{ maxHeight: "300px" }} // Optional: control image height
               />
               <div className="flex flex-col items-center px-2 mt-4">
                 <h3 className="text-xl font-bold font-serif mb-2 text-center">
@@ -169,7 +195,7 @@ const AboutUs = () => {
       <Work />
       <Assurance />
 
-      <section className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12">
+      <section className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12" data-aos="zoom-in" data-aos-duration="2000">
         <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
