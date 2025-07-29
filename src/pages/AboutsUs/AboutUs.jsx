@@ -22,7 +22,7 @@ const aboutCards = [
       <p>
         Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted stockist
         and wholesaler of high-quality industrial fasteners. Since our inception
-        in [2018], we’ve become known for providing reliable, cost-effective
+        in 2018, we’ve become known for providing reliable, cost-effective
         solutions to industries including construction, automotive, electrical,
         engineering, fabrication, and OEMs.
       </p>
