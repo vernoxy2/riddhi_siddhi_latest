@@ -11,6 +11,8 @@ import Assurance from "../../components/Abouts/Assurance";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
+
 
 const aboutCards = [
   {
@@ -20,7 +22,7 @@ const aboutCards = [
       <p>
         Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted stockist
         and wholesaler of high-quality industrial fasteners. Since our inception
-        in [Year], we’ve become known for providing reliable, cost-effective
+        in [2018], we’ve become known for providing reliable, cost-effective
         solutions to industries including construction, automotive, electrical,
         engineering, fabrication, and OEMs.
       </p>
@@ -84,6 +86,8 @@ const AboutUs = () => {
     });
   }, []);
 
+  const navigate = useNavigate();
+
   const [hoveredIdx, setHoveredIdx] = useState(null);
   return (
     <div className="w-full max-w-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
@@ -101,7 +105,7 @@ const AboutUs = () => {
           About Us
         </h2>
         <p
-          className="text-base md:text-lg text-center mb-10 font-serif"
+          className="container text-base md:text-lg lg:text-xl text-center mb-10 font-serif"
           data-aos="fade-down" data-aos-duration="1900"
         >
           Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted
@@ -199,7 +203,7 @@ const AboutUs = () => {
         <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
-        <button className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
+        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
           GET A QUOTE
         </button>
       </section>

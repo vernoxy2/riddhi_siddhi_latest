@@ -7,20 +7,23 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
-    name: "Nath Reynolds",
+    name: "Niral Shah",
     role: "Owner",
+    compny: "Shah Enterprise",
     img: clientImg,
   },
   {
     quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
-    name: "Nath Reynolds",
+    name: "Viral Bulsara",
     role: "Owner",
+    compny: "Viral V-care",
     img: clientImg,
   },
   {
     quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
-    name: "Nath Reynolds",
+    name: "Pramit Parmar",
     role: "Owner",
+    compny: "Krutagna Feb-Tech",
     img: clientImg,
   },
 ];
@@ -58,11 +61,11 @@ const Clients = () => {
         they bring to our business . Customer feedback is vital in helping us to
         get it right.
       </p>
-      <div className="w-full gap-9  grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-20 lg:px-10">
+      <div className="w-full gap-9  grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-12 lg:px-10">
         {testimonials.map((testimonial, idx) => (
           <div
             key={idx}
-            className="bg-gray-50 rounded-2xl shadow-md flex flex-col items-center p-8 transition hover:shadow-xl h-full text-center"
+            className="bg-gray-50 rounded-2xl shadow-md flex flex-col items-center p-6 transition hover:shadow-xl h-full text-center"
             data-aos="zoom-in-up"
             data-aos-duration="2000"
           >
@@ -90,6 +93,12 @@ const Clients = () => {
               data-aos="fade-left"
             >
               {testimonial.role}
+            </span>
+            <span
+              className="text-lg font-serif text-black"
+              data-aos="fade-left"
+            >
+              -{testimonial.compny}
             </span>
           </div>
         ))}

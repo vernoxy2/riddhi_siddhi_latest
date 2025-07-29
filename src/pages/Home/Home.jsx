@@ -14,6 +14,7 @@ import ourStrength4 from "../../assets/Home/ourStrength4.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -23,12 +24,14 @@ const Home = () => {
       delay: 200,
     });
   }, []);
+
+  const navigate = useNavigate();
   return (
     <>
       <div
         className="relative w-full max-w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
-        data-aos="fade-up"
-        data-aos-duration="1500"
+        data-aos="fade"
+        data-aos-duration="1000"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
@@ -40,10 +43,13 @@ const Home = () => {
             Your Trusted Stockist for Industrial Fasteners
           </h1>
           <p className="text-base sm:text-lg md:text-2xl mb-4 sm:mb-8 text-black font-serif">
-            Explore Our Range of Industrial Nuts, Bolts & Screws in MS, SS &
-            Brass.
+            Explore Our Range of Industrial Nuts, Bolts & Screws in GI, MS, SS &
+            High Tensile.
           </p>
-          <button className="bg-primary hover:bg-red-600 text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition">
+          <button
+            onClick={() => navigate("/contact")}
+            className="bg-primary hover:bg-red-600 text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition"
+          >
             Get Quote
           </button>
         </div>
@@ -55,7 +61,7 @@ const Home = () => {
           <div
             className="flex justify-center"
             data-aos="fade-right"
-            data-aos-duration="2000"
+            // data-aos-duration="1000"
           >
             <img
               src={aboutSectionImg}
@@ -65,20 +71,20 @@ const Home = () => {
           </div>
           {/* Text Section */}
           <div
-            className="flex flex-col gap-y-4 justify-center items-center lg:items-start w-full px-2 sm:px-0 text-center lg:text-start"
+            className="flex flex-col gap-y-2 justify-center items-center lg:items-start w-full px-2 sm:px-0 text-center lg:text-start"
             data-aos="fade-left"
-            data-aos-duration="2500"
+            // data-aos-duration="1200"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-6 font-serif w-full">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-5 font-serif w-full">
               Who We Are
             </h2>
-            <p className="text-base sm:text-2xl text-[#555555] mb-2 sm:mb-4 font-serif ">
+            <p className="text-base sm:text-2xl text-[#555555] mb-2 sm:mb-2 font-serif ">
               Riddhi Siddhi Enterprise is a trusted stockist and wholesaler of
               industrial fasteners, based in Vapi, Gujarat. We supply a wide
               range of nuts, bolts, screws, washers, and threaded rods to
               manufacturers, builders, and resellers across India.
             </p>
-            <p className="text-base sm:text-2xl text-[#555555] mb-4 sm:mb-6 font-serif">
+            <p className="text-base sm:text-2xl text-[#555555] mb-4 sm:mb-4 font-serif">
               With ready stock, fast delivery, and a focus on quality, we ensure
               reliable fastener solutions that meet IS, DIN, and ASTM standards.
             </p>
@@ -116,7 +122,7 @@ const Home = () => {
                   className="w-10 h-10"
                 />
                 <span className="text-base sm:text-2xl text-[#555555]">
-                  Materials including Mild Steel, Stainless Steel (304/316),
+                  Materials including Mild Steel, Stainless Steel (202/304/316),
                   Brass, and Galvanized coatings
                 </span>
               </div>
@@ -150,7 +156,7 @@ const Home = () => {
         <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
-        <button className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
+        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
           GET A QUOTE
         </button>
       </section>

@@ -4,8 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const counters = [
-  { title: 'Title1', end: 1200 },
-  { title: 'Title1', end: 1200 },
+   { title: 'Experience', end: '7 Years' },
+  { title: 'Dispatch Capacity', end: '5 Tons/Day' },
   { title: 'Title1', end: 1200 },
 ];
 

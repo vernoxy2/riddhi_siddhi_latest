@@ -23,16 +23,16 @@ const industries = [
     title: 'Automotive',
     desc: 'Precision parts for assembly lines',
   },
-  {
-    icon: constructionIcon,
-    title: 'Construction',
-    desc: 'Fasteners for structures & scaffolding',
-  },
-  {
-    icon: electricPanelIcon,
-    title: 'Electrical Panels',
-    desc: 'Screws & studs for switchboards',
-  },
+  // {
+  //   icon: constructionIcon,
+  //   title: 'Construction',
+  //   desc: 'Fasteners for structures & scaffolding',
+  // },
+  // {
+  //   icon: electricPanelIcon,
+  //   title: 'Electrical Panels',
+  //   desc: 'Screws & studs for switchboards',
+  // },
   {
     icon: furnitureHardwareIcon,
     title: 'Furniture Hardware',
@@ -43,11 +43,11 @@ const industries = [
     title: 'OEM Manufacturing',
     desc: 'Custom fasteners for production units',
   },
-  {
-    icon: hardwareTradersIcon,
-    title: 'Hardware Traders',
-    desc: 'Bulk supply for resellers & stores',
-  },
+  // {
+  //   icon: hardwareTradersIcon,
+  //   title: 'Hardware Traders',
+  //   desc: 'Bulk supply for resellers & stores',
+  // },
   {
     icon: infrastructureIcon,
     title: 'Infrastructure Projects',

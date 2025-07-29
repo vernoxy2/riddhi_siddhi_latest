@@ -54,7 +54,7 @@ const   Enterprises = () => {
     <div className="w-full py-12 bg-white flex flex-col items-center">
       <h2 className="text-3xl md:text-[40px] font-bold text-center mb-2 font-serif" data-aos="fade-up" data-aos-duration="2000">Why Choose</h2>
       <h3 className="text-3xl md:text-4xl font-bold text-center mb-4 font-serif" data-aos="fade-up" data-aos-duration="2500">Riddhi Siddhi Enterprise</h3>
-      <p className="text-lg text-center text-[#555555] mb-10 font-serif " data-aos="fade-down" data-aos-duration="2700">
+      <p className="text-lg lg:text-2xl text-center text-[#555555] mb-10 font-serif " data-aos="fade-down" data-aos-duration="2700">
         At Riddhi Siddhi Enterprise, we don’t just supply fasteners — we deliver reliability, quality, and service that helps your business run smoothly.
       </p>
       <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-4">
