@@ -79,52 +79,57 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-primary px-2 pt-2 pb-3 space-y-1">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
-            }
-            end
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/products"
-            className={({ isActive }) =>
-              `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            Products
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            Contact Us
-          </NavLink>
-          <a
-            href="/brochure.pdf"
-            download
-            className="block mt-2 px-8 py-3 border-2 border-white text-white text-lg font-semibold rounded-lg transition hover:bg-white hover:text-red-700 text-center"
-          >
-            Download Brochure
-          </a>
-        </div>
+        <div
+  className={`lg:hidden bg-primary px-2 pt-2 pb-3 space-y-1 transition-all duration-300 ease-in-out transform origin-top ${
+    isOpen ? 'scale-y-100 opacity-100 max-h-screen' : 'scale-y-0 opacity-0 max-h-0 overflow-hidden'
+  }`}
+>
+  <NavLink
+    to="/"
+    className={({ isActive }) =>
+      `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
+    }
+    end
+    onClick={() => setIsOpen(false)}
+  >
+    Home
+  </NavLink>
+  <NavLink
+    to="/about"
+    className={({ isActive }) =>
+      `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
+    }
+    onClick={() => setIsOpen(false)}
+  >
+    About Us
+  </NavLink>
+  <NavLink
+    to="/products"
+    className={({ isActive }) =>
+      `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
+    }
+    onClick={() => setIsOpen(false)}
+  >
+    Products
+  </NavLink>
+  <NavLink
+    to="/contact"
+    className={({ isActive }) =>
+      `block text-white text-lg font-semibold px-4 py-2 rounded transition ${isActive ? 'bg-red-600' : ''}`
+    }
+    onClick={() => setIsOpen(false)}
+  >
+    Contact Us
+  </NavLink>
+  <a
+    href="/brochure.pdf"
+    download
+    className="block mt-2 px-8 py-3 border-2 border-white text-white text-lg font-semibold rounded-lg transition hover:bg-white hover:text-red-700 text-center"
+  >
+    Download Brochure
+  </a>
+</div>
+
       )}
     </nav>
   );
