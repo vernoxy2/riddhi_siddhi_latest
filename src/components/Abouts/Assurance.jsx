@@ -51,14 +51,17 @@ const Assurance = () => {
     <div className="w-full  py-8 md:py-12 bg-white">
       <div className=" ">
         <div className="text-left mb-8">
-          <h2 className="text-2xl md:text-4xl font-bold" data-aos="fade-right" data-aos-duration="2300">
+          <h2
+            className="text-2xl md:text-4xl font-bold"
+            data-aos="fade-right"
+          >
             <span className="bg-primary text-white px-3 py-1 shadow-md">
               Sourcing &amp; Quality{" "}
               <span className="text-white font-light">Assurance</span>
             </span>
           </h2>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000">
+        <div data-aos="fade-up">
           <p className="text-center mt-6 text-[#000000] text-base md:text-lg max-w-6xl mx-auto container">
             At Riddhi Siddhi Enterprise, quality is the cornerstone of
             everything we do. We understand that the strength and reliability of
@@ -72,9 +75,9 @@ const Assurance = () => {
               key={idx}
               className={
                 "group rounded-xl shadow-md flex flex-col h-full bg-white transition-all duration-300 hover:scale-105 mb-6 border-2"
-              } data-aos="flip-left"
+              }
+              data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
             >
               <div className="flex items-center justify-between p-4 ">
                 <div>

@@ -11,9 +11,7 @@ import "aos/dist/aos.css";
 const Products = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
       once: false, // whether animation should happen only once
-      delay: 200,
     });
   }, []);
 
@@ -24,18 +22,23 @@ const Products = () => {
         alt="productsImg"
         className="w-full max-w-full h-full object-cover"
         data-aos="fade-up"
-        data-aos-duration="1500"
       />
       <Nuts />
       <Bolts />
       <Screws />
       <Washers />
-      <div className="lg:space-y-16 space-y-8 lg:py-12 font-serif container">
+      <div className="lg:space-y-16 space-y-8 lg:py-12 font-serif container py-16">
         <div className="items-center justify-center">
-          <h1 className="text-center text-2xl md:text-3xl font-bold" data-aos="fade-right" data-aos-duration="2000">
+          <h1
+            className="text-center text-2xl md:text-3xl font-bold"
+            data-aos="fade-right"
+          >
             THREADED RODS & STUDS
           </h1>
-          <p className="text-center text-lg md:text-xl md:mx-5" data-aos="fade-left" data-aos-duration="2500">
+          <p
+            className="text-center text-lg md:text-xl md:mx-5"
+            data-aos="fade-left"
+          >
             We supply high-quality threaded rods and studs designed for reliable
             performance in structural, mechanical, and industrial applications.
             Available in a range of lengths, diameters, and materials such as
@@ -48,10 +51,16 @@ const Products = () => {
           </p>
         </div>
         <div className="items-center justify-center">
-          <h1 className="text-center text-2xl md:text-3xl font-bold" data-aos="fade-left" data-aos-duration="3000">
+          <h1
+            className="text-center text-2xl md:text-3xl font-bold"
+            data-aos="fade-left"
+          >
             CUSTOM FASTENERS
           </h1>
-          <p className="text-center text-lg md:text-xl md:mx-5" data-aos="fade-right" data-aos-duration="3500">
+          <p
+            className="text-center text-lg md:text-xl md:mx-5"
+            data-aos="fade-right"
+          >
             When standard solutions don’t fit, we offer custom fasteners
             tailored to your specific requirements. From unique sizes and
             threads to specialized materials and coatings, our custom

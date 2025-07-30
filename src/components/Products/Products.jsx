@@ -61,14 +61,12 @@ const Products = () => {
       <h2
         className="text-4xl lg:text-6xl font-bold text-primary mb-2 font-serif text-center"
         data-aos="fade-up"
-        data-aos-duration="2000"
       >
         Our Product Range
       </h2>
       <p
         className="text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif"
         data-aos="fade-down"
-        data-aos-duration="2500"
       >
         We offer a comprehensive selection of industrial fasteners, available in
         multiple sizes, grades, and coatings
@@ -79,13 +77,12 @@ const Products = () => {
             key={idx}
             className="bg-white rounded shadow-lg flex flex-col items-center overflow-hidden hover:shadow-2xl transition group"
           >
-            <div className="relative w-full h-76 flex items-center justify-center bg-gray-100">
+            <div className="relative w-full h-76 flex items-center justify-center bg-transparent">
               <img
                 src={product.img}
                 alt={product.title}
                 className="object-cover w-full h-full group-hover:scale-100 transition duration-300"
                 data-aos="flip-left"
-                data-aos-duration="2500"
               />
               {/* Overlay for hover */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 px-4">

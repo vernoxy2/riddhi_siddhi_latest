@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useRef } from 'react';
-import counterImg from '../../assets/Home/counterImg.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect, useState, useRef } from "react";
+import counterImg from "../../assets/Home/counterImg.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const counters = [
-  { title: 'Experience (Years)', end: 7 },
-  { title: 'Dispatches (Tons/Day)', end: 5 },
-  { title: 'Happy Clients', end: 1200 },
+  { title: "Experience (Years)", end: 7 },
+  { title: "Dispatches (Tons/Day)", end: 5 },
+  { title: "Happy Clients", end: 1200 },
 ];
 
 const CounterCircle = ({ title, end }) => {
@@ -70,7 +70,6 @@ const CounterCircle = ({ title, end }) => {
 const Counter = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
       once: true,
       delay: 200,
     });
@@ -79,12 +78,17 @@ const Counter = () => {
   return (
     <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-40">
       {/* Left Section */}
-      <div className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full" data-aos="fade-right">
+      <div
+        className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full"
+        data-aos="fade-right"
+      >
         <h2 className="text-2xl md:text-[34px] font-bold font-serif mb-2 text-center lg:text-left">
           Built on Strength, Proven by Numbers
         </h2>
         <p className="text-xl text-[#555555] mb-8 font-serif text-center lg:text-left max-w-md">
-          Our products are engineered for durability, trusted by thousands across industries. Backed by data, we deliver consistent performance you can count on.
+          Our products are engineered for durability, trusted by thousands
+          across industries. Backed by data, we deliver consistent performance
+          you can count on.
         </p>
         <div className="flex flex-wrap gap-6 justify-center lg:justify-start w-full">
           {counters.map((counter, idx) => (
@@ -94,7 +98,10 @@ const Counter = () => {
       </div>
 
       {/* Right Section: Image */}
-      <div className="flex-1 flex justify-center items-center px-4 lg:px-0 w-full mb-8 lg:mb-0" data-aos="fade-left">
+      <div
+        className="flex-1 flex justify-center items-center px-4 lg:px-0 w-full mb-8 lg:mb-0"
+        data-aos="fade-left"
+      >
         <div className="w-full max-w-xl aspect-video relative min-w-0">
           <img
             src={counterImg}
@@ -104,7 +111,10 @@ const Counter = () => {
           {/* White Lines Overlay */}
           <div className="absolute inset-0 flex flex-col justify-between pointer-events-none">
             {[...Array(4)].map((_, i) => (
-              <div key={i} className="border-t-2 border-white w-full opacity-70"></div>
+              <div
+                key={i}
+                className="border-t-2 border-white w-full opacity-70"
+              ></div>
             ))}
           </div>
         </div>

@@ -15,17 +15,21 @@ const screws = [
 const Screws = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
       once: false, // whether animation should happen only once
-      delay: 200,
     });
   }, []);
   return (
     <div className="w-full py-12 bg-white flex flex-col items-center container">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif" data-aos="fade-down" data-aos-duration="3000">
+      <h2
+        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
+        data-aos="fade-down"
+      >
         SCREWS
       </h2>
-      <p className="text-lg text-center text-gray-800 mb-10 font-serif" data-aos="fade-up" data-aos-duration="3800"   >
+      <p
+        className="text-lg text-center text-gray-800 mb-10 font-serif"
+        data-aos="fade-up"
+      >
         From wood screws to machine screws and self-tapping screws, we stock a
         complete line for diverse fastening tasks. Our screws are engineered for
         precision and reliability, offering strong grip and easy installation.
@@ -36,7 +40,8 @@ const Screws = () => {
         {screws.map((screw, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col" data-aos="flip-left" data-aos-duration="2500"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+            data-aos="flip-left"
           >
             <div className="bg-black py-6 text-center">
               <span className="text-2xl font-bold text-white font-serif">

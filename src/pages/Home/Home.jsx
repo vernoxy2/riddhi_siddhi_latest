@@ -31,13 +31,11 @@ const Home = () => {
       <div
         className="relative w-full max-w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         data-aos="fade"
-        data-aos-duration="1000"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
-          className="ml-2 sm:ml-8 md:ml-16 max-w-xl bg-black bg-opacity-0 p-4 sm:p-6 md:p-8 rounded-lg flex flex-col items-start w-full"
-          data-aos="fade-down"
-          data-aos-duration="1700"
+          className="ml-2 sm:ml-8 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-4 lg:p-8 rounded-lg flex flex-col items-start w-full"
+          data-aos="fade-right"
         >
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4 text-black font-serif">
             Your Trusted Stockist for Industrial Fasteners
@@ -61,7 +59,6 @@ const Home = () => {
           <div
             className="flex justify-center"
             data-aos="fade-right"
-            // data-aos-duration="1000"
           >
             <img
               src={aboutSectionImg}
@@ -71,9 +68,8 @@ const Home = () => {
           </div>
           {/* Text Section */}
           <div
-            className="flex flex-col gap-y-2 justify-center items-center lg:items-start w-full px-2 sm:px-0 text-center lg:text-start"
+            className="flex flex-col gap-y-2 justify-center items-center lg:items-start w-full p-5 sm:px-0 text-center lg:text-start"
             data-aos="fade-left"
-            // data-aos-duration="1200"
           >
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-5 font-serif w-full">
               Who We Are
@@ -151,12 +147,11 @@ const Home = () => {
       <section
         className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12"
         data-aos="zoom-in"
-        data-aos-duration="2000"
       >
-        <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
+        <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
-        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
+        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm lg:text-2xl">
           GET A QUOTE
         </button>
       </section>

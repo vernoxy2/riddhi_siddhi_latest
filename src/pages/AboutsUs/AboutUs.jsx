@@ -13,7 +13,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 
-
 const aboutCards = [
   {
     title: "Who We Are",
@@ -80,9 +79,7 @@ const missionVisionValues = [
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
       once: false, // whether animation should happen only once
-      delay: 200,
     });
   }, []);
 
@@ -95,18 +92,18 @@ const AboutUs = () => {
         src={aboutUsImage}
         alt="aboutUsImage"
         className="w-full max-w-full h-full object-cover"
-        data-aos="fade-up" data-aos-duration="1500"
+        data-aos="fade-up"
       />
       <div className="container mx-auto px-2 py-8 flex flex-col items-center">
         <h2
           className="text-3xl md:text-4xl font-bold text-center font-serif mb-4"
-          data-aos="fade-up" data-aos-duration="1700"
+          data-aos="fade-up"
         >
           About Us
         </h2>
         <p
           className="container text-base md:text-lg lg:text-xl text-center mb-10 font-serif"
-          data-aos="fade-down" data-aos-duration="1900"
+          data-aos="fade-down"
         >
           Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted
           stockist and wholesaler of high-quality industrial fasteners. We
@@ -132,12 +129,12 @@ const AboutUs = () => {
                     src={card.img}
                     alt={card.title}
                     className="w-[100px] h-[100px] object-contain"
-                    data-aos="zoom-in" data-aos-duration="1500"
+                    data-aos="zoom-in"
                   />
                 </div>
                 <div
                   className="mt-16 flex flex-col items-center"
-                  data-aos="fade-left" data-aos-duration="1700"
+                  data-aos="fade-left"
                 >
                   <h3
                     className={`text-2xl font-bold font-serif mb-4 text-center transition-colors duration-200 ${
@@ -163,11 +160,14 @@ const AboutUs = () => {
       <div className="w-full py-12 ">
         <h2
           className="text-3xl md:text-4xl font-bold text-center font-serif mb-2"
-          data-aos="fade-up" data-aos-duration="1500"
+          data-aos="fade-up"
         >
           Company Mission, Vision and Values
         </h2>
-        <p className="text-center text-lg mb-10" data-aos="fade-down" data-aos-duration="1700">
+        <p
+          className="text-center text-lg mb-10"
+          data-aos="fade-down"
+        >
           Defining our mission, vision, and values for purposeful growth.
         </p>
         {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8"> */}
@@ -176,7 +176,7 @@ const AboutUs = () => {
             <div
               key={idx}
               className="bg-white rounded-2xl shadow-lg flex flex-col items-center overflow-hidden transition p-6"
-              data-aos="flip-right" data-aos-duration="1900"
+              data-aos="flip-right"
               style={{ width: "350px", minHeight: "500px" }} // You can adjust these values as needed
             >
               <img
@@ -199,11 +199,17 @@ const AboutUs = () => {
       <Work />
       <Assurance />
 
-      <section className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12" data-aos="zoom-in" data-aos-duration="2000">
+      <section
+        className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12"
+        data-aos="zoom-in"
+      >
         <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
-        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl">
+        <button
+          onClick={() => navigate("/contact")}
+          className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm sm:text-2xl"
+        >
           GET A QUOTE
         </button>
       </section>

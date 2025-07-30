@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="text-2xl font-bold mb-4 font-serif">Social Media</h3>
-            <div className="flex flex-col gap-4 mt-2">
+            <div className="flex  gap-4 mt-2">
               <a href="#" className="hover:text-primary" aria-label="Facebook">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Mobile Layout */}
-        <div className="lg:hidden w-full flex flex-col gap-4">
+        <div className="lg:hidden w-full flex flex-col gap-6 justify-center">
           {/* Quick Links Dropdown */}
           <div className="border-b border-gray-700 pb-2">
             <button
@@ -94,7 +94,7 @@ const Footer = () => {
               <span>{showQuickLinks ? '▲' : '▼'}</span>
             </button>
             {showQuickLinks && (
-              <ul className="mt-2 pl-2">
+              <ul className="mt-4 pl-2">
                 {quickLinks.map((link) => (
                   <li key={link.name} className="mb-2">
                     <Link to={link.to} className="hover:underline">
@@ -115,7 +115,7 @@ const Footer = () => {
               <span>{showProductCategories ? '▲' : '▼'}</span>
             </button>
             {showProductCategories && (
-              <ul className="mt-2 pl-2">
+              <ul className="mt-4 pl-2">
                 {productCategories.map((cat) => (
                   <li key={cat} className="mb-2">
                     {cat}

@@ -31,9 +31,7 @@ const testimonials = [
 const Clients = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
       once: false, // whether animation should happen only once
-      delay: 200,
     });
   }, []);
   return (
@@ -41,21 +39,18 @@ const Clients = () => {
       <h3
         className="text-[25px] font-bold text-center mb-2 font-serif uppercase tracking-widest"
         data-aos="fade-up"
-        data-aos-duration="2000"
       >
         Testimonials
       </h3>
       <h2
         className="text-4xl md:text-[40px] font-bold text-center mb-6 font-serif"
         data-aos="fade-up"
-        data-aos-duration="2300"
       >
         WHAT CLIENTS SAY
       </h2>
       <p
         className="text-[25px] text-center text-[#555555] mb-12 font-serif "
         data-aos="fade-down"
-        data-aos-duration="2500"
       >
         We place huge value on strong relationships and have seen the benefit
         they bring to our business . Customer feedback is vital in helping us to
@@ -67,14 +62,13 @@ const Clients = () => {
             key={idx}
             className="bg-gray-50 rounded-2xl shadow-md flex flex-col items-center p-6 transition hover:shadow-xl h-full text-center"
             data-aos="zoom-in-up"
-            data-aos-duration="2000"
           >
             <img
               src={testimonial.img}
               alt={testimonial.name}
               className="w-24 h-24 rounded-full object-cover mb-6 border-4 border-white shadow"
               draggable="false"
-              data-aos="zoom-in" data-aos-duration="1500"
+              data-aos="zoom-in"
             />
             <p
               className="text-2xl text-[#555555] font-serif mb-6"

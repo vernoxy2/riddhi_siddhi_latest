@@ -45,16 +45,14 @@ const workSteps = [
 const Work = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
       once: false, // whether animation should happen only once
-      delay: 200,
     });
   }, []);
   return (
     <div className="w-full py-12 bg-[#f8f8f8]">
       <h2
         className="text-3xl md:text-4xl font-bold text-center font-serif mb-12 text-gray-800"
-        data-aos="fade-up" data-aos-duration="1500"
+        data-aos="fade-up"
       >
         How We Work
       </h2>
@@ -63,7 +61,7 @@ const Work = () => {
           <div
             key={idx}
             className="bg-[#fafafa] w-full sm:w-[300px] md:w-[280px] lg:w-[260px] h-[370px] rounded-lg shadow-md flex flex-col items-center justify-center p-5 pt-0 gap-[10px] relative z-[1] overflow-hidden transition-colors duration-300 hover:shadow-xl container"
-            data-aos="flip-left" data-aos-duration="2000"
+            data-aos="flip-left"
           >
             <img
               src={step.img}

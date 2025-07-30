@@ -6,6 +6,7 @@ import domeNutImg from "../../assets/Products/domeNutImg.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { tr } from "motion/react-client";
 
 const nuts = [
   { name: "HEX NUT", img: hexNutImg },
@@ -15,21 +16,24 @@ const nuts = [
 ];
 
 const Nuts = () => {
-
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      once: false, // whether animation should happen only once
-      delay: 200,
+      once: true, // whether animation should happen only once
     });
   }, []);
 
   return (
     <div className="w-full py-12 bg-white flex flex-col items-center container">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif" data-aos="fade-down" data-aos-duration="1500">
+      <h2
+        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
+        data-aos="fade-down"
+      >
         NUTS
       </h2>
-      <p className="text-xl text-center text-gray-800 mb-10 font-serif" data-aos="fade-up" data-aos-duration="1800">
+      <p
+        className="text-xl text-center text-gray-800 mb-10 font-serif"
+        data-aos="fade-up"
+      >
         We offer a wide variety of nuts, including hex nuts, lock nuts, wing
         nuts, and more, available in multiple sizes and materials. Designed to
         pair with bolts and threaded components, our nuts ensure secure and
@@ -42,7 +46,8 @@ const Nuts = () => {
         {nuts.map((nut, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col" data-aos="flip-left" data-aos-duration="2500"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+            data-aos="flip-left"
           >
             <div className="bg-black py-6 text-center">
               <span className="text-2xl font-bold text-white font-serif">
