@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import engineeringIcon from "../../assets/Home/engineeringIcon.png";
-import electricPanelIcon from "../../assets/Home/electricPanelIcon.png";
 import furnitureHardwareIcon from "../../assets/Home/furnitureHardwareIcon.png";
 import oemManufacturingIcon from "../../assets/Home/oemManufacturingIcon.png";
-import hardwareTradersIcon from "../../assets/Home/hardwareTradersIcon.png";
 import infrastructureIcon from "../../assets/Home/infrastructureIcon.png";
 import fabricationUnitIcon from "../../assets/Home/fabricationUnitIcon.png";
 import automotiveIcon from "../../assets/Home/automotiveIcon.png";
-import constructionIcon from "../../assets/Home/constructionIcon.png";
 import chemical from "../../assets/Home/chemical.png";
 import fire from "../../assets/Home/fire.png";
 import Pharmacy from "../../assets/Home/Pharmacy.png";
@@ -26,16 +23,7 @@ const industries = [
     title: "Automotive",
     desc: "Precision parts for assembly lines",
   },
-  // {
-  //   icon: constructionIcon,
-  //   title: 'Construction',
-  //   desc: 'Fasteners for structures & scaffolding',
-  // },
-  // {
-  //   icon: electricPanelIcon,
-  //   title: 'Electrical Panels',
-  //   desc: 'Screws & studs for switchboards',
-  // },
+
   {
     icon: furnitureHardwareIcon,
     title: "Furniture Hardware",
@@ -46,11 +34,7 @@ const industries = [
     title: "OEM Manufacturing",
     desc: "Custom fasteners for production units",
   },
-  // {
-  //   icon: hardwareTradersIcon,
-  //   title: 'Hardware Traders',
-  //   desc: 'Bulk supply for resellers & stores',
-  // },
+
   {
     icon: infrastructureIcon,
     title: "Infrastructure Projects",
@@ -79,7 +63,14 @@ const industries = [
 ];
 
 // Duplicate industries for seamless scroll
-const scrollingIndustries = [...industries, ...industries, ...industries, ...industries, ...industries, ...industries];
+const scrollingIndustries = [
+  ...industries,
+  ...industries,
+  ...industries,
+  ...industries,
+  ...industries,
+  ...industries,
+];
 
 const Industries = () => {
   useEffect(() => {
