@@ -1,38 +1,38 @@
 import React, { useEffect } from "react";
-import nutImg from "../../assets/Home/nutImg.jpg";
-import boltImg from "../../assets/Home/boltImg.jpg";
-import screwImg from "../../assets/Home/screwImg.jpg";
-import washerImg from "../../assets/Home/washerImg.jpg";
-import threadedRodsImg from "../../assets/Home/threadedRodsImg.jpg";
-import customFastenersImg1 from "../../assets/Home/customFastenersImg1.jpg";
+import nutImg from "../../assets/Home/Nutbolt.webp";
+import uboltImg from "../../assets/Home/UBolt.webp";
+import AnchorFastner from "../../assets/Home/AnchorFastner.webp";
+import screws from "../../assets/Home/screws.webp";
+import threadedRodsImg from "../../assets/Home/threadedRodsImg.webp";
+import customFastenersImg1 from "../../assets/Home/customFastenersImg1.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const products = [
   {
-    title: "NUTS",
+    title: "NUT & BOLTS",
     img: nutImg,
     description:
-      "We offer a wide variety of nuts, including hex nuts, lock nuts, wing nuts, and more, available in multiple sizes and materials.",
+      "We are stockists of MS, G.I., and SS nut bolts in a full range of inch and metric (mm) sizes. All grades and material qualities are available. Full-thread and half-thread bolts in all sizes are in stock.",
   },
   {
-    title: "BOLTS",
-    img: boltImg,
+    title: "U-BOLTS",
+    img: uboltImg,
     description:
-      "Our bolts range includes hex bolts, carriage bolts, and more, suitable for diverse industrial applications.",
+      "All sizes of zinc-plated U-bolts are available, manufactured with standard quality and specifications.",
   },
   {
-    title: "SCREWS",
-    img: screwImg,
+    title: "Anchor Fastner",
+    img: AnchorFastner,
+    description:
+      "We are stockists of Anchor Fasteners, specializing in Pin-Type Anchor Fasteners.The sizes of Anchor Fasteners that are readily available in our stock 24/7 include:",
+  },
+  {
+    title: "screws",
+    img: screws,
     description:
       "Choose from machine screws, self-tapping screws, and other types, in various sizes and finishes.",
-  },
-  {
-    title: "WASHERS",
-    img: washerImg,
-    description:
-      "We supply plain, spring, and special washers to meet your fastening needs.",
   },
   {
     title: "THREADED RODS & STUDS",
@@ -89,7 +89,7 @@ const Products = () => {
                 <span className="text-white text-2xl font-bold font-serif mb-4 text-center drop-shadow-lg">
                   {product.title}
                 </span>
-                <p className="text-white text-base font-serif text-center">
+                <p className="text-white text-base font-serif text-center capitalize">
                   {product.description}
                 </p>
               </div>
