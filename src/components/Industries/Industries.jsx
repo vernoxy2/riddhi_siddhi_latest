@@ -79,7 +79,7 @@ const industries = [
 ];
 
 // Duplicate industries for seamless scroll
-const scrollingIndustries = [...industries, ...industries];
+const scrollingIndustries = [...industries, ...industries, ...industries, ...industries, ...industries, ...industries];
 
 const Industries = () => {
   useEffect(() => {
