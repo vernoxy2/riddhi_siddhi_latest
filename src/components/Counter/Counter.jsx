@@ -4,9 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const counters = [
-  { title: "Experience (Years)", end: 7 },
-  { title: "Dispatches (Tons/Day)", end: 5 },
-  { title: "Happy Clients", end: 1200 },
+  { title: "Experience", end: 7, unit: "years" },
+  { title: "Dispatches", end: 5, unit: "Tons/Day" },
+  { title: "Happy Clients", end: 1200, unit: "" },
+  
 ];
 
 const CounterCircle = ({ title, end }) => {
@@ -90,9 +91,9 @@ const Counter = () => {
           across industries. Backed by data, we deliver consistent performance
           you can count on.
         </p>
-        <div className="flex flex-wrap gap-6 justify-center lg:justify-start w-full">
+        <div className="flex flex-wrap gap-6 justify-center xl:justify-start w-full">
           {counters.map((counter, idx) => (
-            <CounterCircle key={idx} title={counter.title} end={counter.end} />
+            <CounterCircle key={idx} title={counter.title} end={counter.end} unit={counter.unit} />
           ))}
         </div>
       </div>
