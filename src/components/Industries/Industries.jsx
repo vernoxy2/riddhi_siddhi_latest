@@ -8,6 +8,9 @@ import infrastructureIcon from "../../assets/Home/infrastructureIcon.png";
 import fabricationUnitIcon from "../../assets/Home/fabricationUnitIcon.png";
 import automotiveIcon from "../../assets/Home/automotiveIcon.png";
 import constructionIcon from "../../assets/Home/constructionIcon.png";
+import chemical from "../../assets/Home/chemical.png";
+import fire from "../../assets/Home/fire.png";
+import Pharmacy from "../../assets/Home/Pharmacy.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -57,6 +60,21 @@ const industries = [
     icon: fabricationUnitIcon,
     title: "Fabrication Units",
     desc: "Complete range for metal fabrication",
+  },
+  {
+    icon: chemical,
+    title: "Chemical",
+    desc: "",
+  },
+  {
+    icon: fire,
+    title: "Fire Consult",
+    desc: "",
+  },
+  {
+    icon: Pharmacy,
+    title: "Pharmacy",
+    desc: "",
   },
 ];
 
