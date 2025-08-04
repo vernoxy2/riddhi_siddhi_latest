@@ -7,13 +7,13 @@ const counters = [
   { title: "Experience", end: 7, unit: "years" },
   { title: "Dispatches", end: 5, unit: "Tons/Day" },
   { title: "Happy Clients", end: 1200, unit: "" },
-  
 ];
 
-const CounterCircle = ({ title, end }) => {
+const CounterCircle = ({ title, end, unit }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
+  const frameRef = useRef(null); // for canceling animation
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,9 +25,7 @@ const CounterCircle = ({ title, end }) => {
       { threshold: 0.5 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    if (ref.current) observer.observe(ref.current);
 
     return () => {
       if (ref.current) observer.unobserve(ref.current);
@@ -40,29 +38,29 @@ const CounterCircle = ({ title, end }) => {
     let start = 0;
     const duration = 2000;
     const increment = end / (duration / 16);
-    let frame;
 
     const animate = () => {
       start += increment;
       if (start < end) {
         setCount(Math.floor(start));
-        frame = requestAnimationFrame(animate);
+        frameRef.current = requestAnimationFrame(animate);
       } else {
         setCount(end);
-        cancelAnimationFrame(frame);
+        cancelAnimationFrame(frameRef.current);
       }
     };
 
     animate();
 
-    return () => cancelAnimationFrame(frame);
+    return () => cancelAnimationFrame(frameRef.current);
   }, [inView, end]);
 
   return (
     <div ref={ref} className="flex flex-col items-center">
-      <span className="text-lg font-bold mb-2 text-center">{title}</span>
-      <div className="w-40 h-40 flex items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-2 mb-2">
+      <span className="text-lg md:text-2xl font-bold mb-2 text-center text-primary">{title}</span>
+      <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-2 mb-2">
         {count}
+        {unit && <span className="text-base ml-1 md:text-2xl">{unit}</span>}
       </div>
     </div>
   );
@@ -93,7 +91,12 @@ const Counter = () => {
         </p>
         <div className="flex flex-wrap gap-6 justify-center xl:justify-start w-full">
           {counters.map((counter, idx) => (
-            <CounterCircle key={idx} title={counter.title} end={counter.end} unit={counter.unit} />
+            <CounterCircle
+              key={idx}
+              title={counter.title}
+              end={counter.end}
+              unit={counter.unit}
+            />
           ))}
         </div>
       </div>
