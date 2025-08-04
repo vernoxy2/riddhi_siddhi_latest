@@ -34,7 +34,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
-          className="ml-2 sm:ml-8 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-4 lg:p-8 rounded-lg flex flex-col items-start w-full"
+          className="ml-2 sm:ml-8 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-5 lg:p-8 rounded-lg flex flex-col items-start w-full"
           data-aos="fade-right"
         >
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4 text-black font-serif">
@@ -54,7 +54,7 @@ const Home = () => {
       </div>
 
       <div className="w-full container flex flex-col items-center py-8 sm:py-12 px-2 sm:px-4 md:px-0 overflow-x-hidden">
-        <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-y-6 items-center">
+        <div className=" w-full grid grid-cols-1 xl:grid-cols-2 gap-y-6 items-center">
           {/* Image Section */}
           <div
             className="flex justify-center"
@@ -63,7 +63,7 @@ const Home = () => {
             <img
               src={aboutSectionImg}
               alt="About Riddhi Siddhi"
-              className="rounded-xl shadow-lg object-cover w-full max-w-xs sm:max-w-md md:max-w-xl h-[220px] sm:h-[320px] md:h-[400px] lg:h-[480px]"
+              className="rounded-xl shadow-lg object-cover w-full max-w-xs sm:max-w-md md:max-w-xl lg:w-full h-[220px] sm:h-[320px] md:h-[400px] lg:h-[480px]"
             />
           </div>
           {/* Text Section */}
@@ -87,7 +87,7 @@ const Home = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-2 sm:mb-4 font-serif">
               Our Strength Lies In
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2 sm:gap-y-4 w-full text-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-4 sm:gap-y-6 w-full text-start">
               <div className="flex items-center space-x-2 sm:space-x-3">
                 {/* <span className="text-xl sm:text-2xl">🏠</span> */}
                 <img
@@ -148,7 +148,7 @@ const Home = () => {
         className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl px-6 py-12 mx-4 sm:mx-8 md:mx-16 my-12"
         data-aos="zoom-in"
       >
-        <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-center text-black mb-6 leading-snug">
+        <h2 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
         <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm lg:text-2xl">

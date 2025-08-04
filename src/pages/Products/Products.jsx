@@ -28,7 +28,7 @@ const Products = () => {
       <Screws />
       <Washers />
       <div className="lg:space-y-16 space-y-8 lg:py-12 font-serif container py-16">
-        <div className="items-center justify-center">
+        <div className="items-center justify-centern space-y-4">
           <h1
             className="text-center text-2xl md:text-3xl font-bold"
             data-aos="fade-right"
@@ -36,7 +36,7 @@ const Products = () => {
             THREADED RODS & STUDS
           </h1>
           <p
-            className="text-center text-lg md:text-xl md:mx-5"
+            className="text-center text-lg md:text-xl md:mx-5 leading-snug"
             data-aos="fade-left"
           >
             We supply high-quality threaded rods and studs designed for reliable
@@ -50,7 +50,7 @@ const Products = () => {
             precision and durability you can trust.
           </p>
         </div>
-        <div className="items-center justify-center">
+        <div className="items-center justify-center space-y-4">
           <h1
             className="text-center text-2xl md:text-3xl font-bold"
             data-aos="fade-left"
@@ -58,7 +58,7 @@ const Products = () => {
             CUSTOM FASTENERS
           </h1>
           <p
-            className="text-center text-lg md:text-xl md:mx-5"
+            className="text-center text-lg md:text-xl md:mx-5 leading-snug"
             data-aos="fade-right"
           >
             When standard solutions don’t fit, we offer custom fasteners

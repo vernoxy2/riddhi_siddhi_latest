@@ -30,7 +30,7 @@ const Bolts = () => {
         BOLTS
       </h2>
       <p
-        className="text-xl text-center text-gray-800 mb-10 font-serif"
+        className="text-xl text-center text-gray-800 mb-10 font-serif leading-snug"
         data-aos="fade-up"
       >
         Our extensive range of bolts includes hex bolts, carriage bolts, eye

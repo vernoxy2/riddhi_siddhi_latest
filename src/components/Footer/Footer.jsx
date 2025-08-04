@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="mb-2 text-sm">rsenterprice4275@gmail.com</div>
           </div>
           {/* Quick Links */}
-          <div>
+          <div className='mx-auto'>
             <h3 className="text-2xl font-bold mb-4 font-serif">Quick Links</h3>
             <ul>
               {quickLinks.map((link) => (

@@ -1,4 +1,3 @@
-
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -19,10 +18,19 @@ export default {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        'xs': '526px',
+        xs: "526px",
       },
     },
     extend: {
+      animations: {
+        "scroll-industries": "scrollLeft 60s linear infinite",
+      },
+      keyframes: {
+        scrollLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(50%)" },
+        },
+      },
       fontFamily: {
         serif: ["Noto Serif", "serif"],
         kulim: ['"Kulim Park"', "sans-serif"],

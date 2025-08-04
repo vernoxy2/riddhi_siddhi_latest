@@ -58,7 +58,7 @@ const CounterCircle = ({ title, end, unit }) => {
   return (
     <div ref={ref} className="flex flex-col items-center">
       <span className="text-lg md:text-2xl font-bold mb-2 text-center text-primary">{title}</span>
-      <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-2 mb-2">
+      <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-2 ">
         {count}
         {unit && <span className="text-base ml-1 md:text-2xl">{unit}</span>}
       </div>
@@ -75,7 +75,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-40">
+    <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-14 gap-x-5 2xl:gap-x-2">
       {/* Left Section */}
       <div
         className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full"
@@ -103,7 +103,7 @@ const Counter = () => {
 
       {/* Right Section: Image */}
       <div
-        className="flex-1 flex justify-center items-center px-4 lg:px-0 w-full mb-8 lg:mb-0"
+        className="flex-1 flex justify-center items-center px-4 2xl:px-0 w-full mb-8 lg:mb-0"
         data-aos="fade-left"
       >
         <div className="w-full max-w-xl aspect-video relative min-w-0">

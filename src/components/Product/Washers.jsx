@@ -27,7 +27,7 @@ const Washers = () => {
         WASHERS
       </h2>
       <p
-        className="text-lg text-center text-gray-800 mb-10 font-serif"
+        className="text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
         data-aos="fade-up"
       >
         Washers are essential in distributing load and preventing damage to

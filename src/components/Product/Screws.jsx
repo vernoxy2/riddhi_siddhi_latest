@@ -27,7 +27,7 @@ const Screws = () => {
         SCREWS
       </h2>
       <p
-        className="text-lg text-center text-gray-800 mb-10 font-serif"
+        className="text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
         data-aos="fade-up"
       >
         From wood screws to machine screws and self-tapping screws, we stock a
