@@ -23,7 +23,7 @@ const ContactUs = () => {
       />
       <div className="w-full max-w-full h-full flex items-center justify-center py-8 px-2">
         <div
-          className="w-full max-w-7xl bg-gray-100 rounded-xl shadow-lg p-8 md:p-16 flex flex-col md:flex-row gap-10"
+          className="w-full max-w-7xl bg-gray-100 rounded-xl shadow-lg p-8 md:p-14 xl:p-16 flex flex-col lg:flex-row gap-10"
           data-aos="zoom-in"
         >
           {/* Left: Info */}
