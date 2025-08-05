@@ -17,7 +17,7 @@ const Navbar = () => {
             </NavLink>
           </div>
           {/* Desktop Menu */}
-          <div className="hidden lg:flex md:items-center md:space-x-12">
+          <div className="hidden xl:flex md:items-center md:space-x-12">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -60,7 +60,7 @@ const Navbar = () => {
             </a>
           </div>
           {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+          <div className="xl:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white focus:outline-none"

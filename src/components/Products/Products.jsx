@@ -57,7 +57,7 @@ const Products = () => {
     });
   }, []);
   return (
-    <div className="w-full flex flex-col items-center py-12 px-2 md:px-0 bg-white">
+    <div className="w-full flex flex-col items-center py-12 container bg-white">
       <h2
         className="text-4xl lg:text-6xl font-bold text-primary mb-2 font-serif text-center"
         data-aos="fade-up"
@@ -71,7 +71,7 @@ const Products = () => {
         We offer a comprehensive selection of industrial fasteners, available in
         multiple sizes, grades, and coatings
       </p>
-      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-28">
+      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-14">
         {products.map((product, idx) => (
           <div
             key={idx}

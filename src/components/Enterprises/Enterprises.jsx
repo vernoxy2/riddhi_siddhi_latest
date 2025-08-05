@@ -50,19 +50,16 @@ const Enterprises = () => {
     });
   }, []);
   return (
-    <div className="w-full py-12 bg-white flex flex-col items-center">
+    <div className="w-full container py-8 md:py-16  space-y-4 md:space-y-10 bg-white flex flex-col items-center">
       <h2
-        className="text-3xl md:text-[40px] font-bold text-center mb-2 font-serif"
+        className="text-3xl font-bold text-center font-serif"
         data-aos="fade-up"
       >
         Why Choose
-      </h2>
-      <h3
-        className="text-3xl md:text-4xl font-bold text-center mb-4 font-serif"
-        data-aos="fade-up"
-      >
+        <br />
         Riddhi Siddhi Enterprise
-      </h3>
+      </h2>
+      
       <p
         className="text-lg lg:text-2xl text-center text-[#555555] mb-10 font-serif "
         data-aos="fade-up"
@@ -70,26 +67,26 @@ const Enterprises = () => {
         At Riddhi Siddhi Enterprise, we don’t just supply fasteners — we deliver
         reliability, quality, and service that helps your business run smoothly.
       </p>
-      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 ">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="relative bg-white rounded-xl shadow-md flex flex-col items-center p-8 transition hover:shadow-xl h-[22rem] overflow-hidden group"
+            className="relative bg-white rounded-xl shadow-md flex flex-col items-center p-4 transition hover:shadow-xl h-[16rem] overflow-hidden group"
             data-aos="fade-up"
           >
             {/* Sliding red background */}
             <div className="absolute left-0 bottom-0 w-full h-0 bg-primary z-0 transition-all duration-500 group-hover:h-full"></div>
-            <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-4 w-full">
+            <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-2 w-full">
               <img
                 src={feature.icon}
                 alt={feature.title}
-                className="w-16 h-16 object-contain select-none transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200 m-0 p-0"
+                className="w-16 h-16 object-contain select-none transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
                 draggable="false"
               />
-              <h4 className="text-lg font-bold text-center font-serif transition-colors duration-300 group-hover:text-white m-0 p-0">
+              <h4 className="text-lg font-bold text-center font-serif transition-colors duration-300 group-hover:text-white ">
                 {feature.title}
               </h4>
-              <p className="text-base text-[#555555] text-center font-serif transition-colors duration-300 group-hover:text-white m-0 p-0">
+              <p className="text-base text-[#555555] text-center font-serif transition-colors duration-300 group-hover:text-white">
                 {feature.desc}
               </p>
             </div>

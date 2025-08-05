@@ -44,46 +44,51 @@ const workSteps = [
 
 const Work = () => {
   useEffect(() => {
-    AOS.init({
-      once: false, // whether animation should happen only once
-    });
+    AOS.init({ once: false });
   }, []);
+
   return (
-    <div className="w-full py-12 bg-[#f8f8f8]">
-      <h2
-        className="text-3xl md:text-4xl font-bold text-center font-serif mb-12 text-gray-800"
-        data-aos="fade-up"
-      >
-        How We Work
-      </h2>
-      <div className="flex flex-wrap justify-center gap-6 px-4">
-        {workSteps.map((step, idx) => (
-          <div
-            key={idx}
-            className="bg-[#fafafa] w-full sm:w-[300px] md:w-[280px] lg:w-[260px] h-[370px] rounded-lg shadow-md flex flex-col items-center justify-center p-5 pt-0 gap-[10px] relative z-[1] overflow-hidden transition-colors duration-300 hover:shadow-xl container"
-            data-aos="flip-left"
-          >
-            <img
-              src={step.img}
-              alt={step.title}
-              className="w-16 h-16 object-contain"
-            />
-            <h3 className="text-xl font-bold text-center text-primary font-serif">
-              {step.title}
-            </h3>
-            <p className="text-center text-lg text-gray-700 px-1">
-              {step.desc}
-            </p>
-            <div className="absolute left-0 bottom-1 flex items-center gap-x-2">
-              <img src={WeWork} alt="" className="h-14 -translate-x-4" />
-              <p className=" text-4xl text-primary font-extrabold">
-                {step.number}
-              </p>
+    <section className="bg-[#f8f8f8] py-12">
+      <div className="container mx-auto px-4 space-y-8 md:space-y-16">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center font-serif text-gray-800"
+          data-aos="fade-up"
+        >
+          How We Work
+        </h2>
+
+        <div className="flex flex-wrap justify-center gap-6">
+          {workSteps.map((step, idx) => (
+            <div
+              key={idx}
+              className="bg-[#fafafa] w-[250px] h-[320px] rounded-xl shadow-md flex flex-col items-center justify-between p-5 relative z-[1] overflow-hidden transition-all duration-300 hover:shadow-xl"
+              data-aos="flip-left"
+            >
+              <div className="flex flex-col items-center gap-3">
+                <img
+                  src={step.img}
+                  alt={step.title}
+                  className="w-16 h-16 object-contain"
+                />
+                <h3 className="text-xl font-bold text-center text-primary font-serif">
+                  {step.title}
+                </h3>
+                <p className="text-center text-sm text-gray-700">
+                  {step.desc}
+                </p>
+              </div>
+
+              <div className="absolute left-0 bottom-2 flex items-center gap-x-2">
+                <img src={WeWork} alt="Step Icon" className="h-14 -translate-x-4" />
+                <p className="text-4xl text-primary font-extrabold">
+                  {step.number}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

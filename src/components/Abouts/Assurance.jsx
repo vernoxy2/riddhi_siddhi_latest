@@ -48,9 +48,9 @@ const Assurance = () => {
   }, []);
 
   return (
-    <div className="w-full  py-8 md:py-12 bg-white">
-      <div className=" ">
-        <div className="text-left mb-8">
+    <div className=" py-4 md:py-12 ">
+      <div className=" space-y-4 md:space-y-12">
+        <div className="text-left">
           <h2
             className="text-2xl md:text-4xl font-bold"
             data-aos="fade-right"
@@ -62,14 +62,14 @@ const Assurance = () => {
           </h2>
         </div>
         <div data-aos="fade-up">
-          <p className="text-center mt-6 text-[#000000] text-base md:text-lg max-w-6xl mx-auto container">
+          <p className="text-center text-[#000000] text-base md:text-lg max-w-6xl mx-auto container">
             At Riddhi Siddhi Enterprise, quality is the cornerstone of
             everything we do. We understand that the strength and reliability of
             your projects depend on the fasteners you use, which is why we are
             deeply committed to sourcing and delivering only the best.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-8 sm:gap-y-14 max-w-7xl mx-auto py-5 md:py-12">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8 sm:gap-y-14">
           {assuranceData.map((item, idx) => (
             <div
               key={idx}

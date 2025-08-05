@@ -94,16 +94,20 @@ const AboutUs = () => {
         className="w-full max-w-full h-full object-cover"
         data-aos="fade-up"
       />
-      <div className="container mx-auto px-2 py-8 flex flex-col items-center">
+      {/* About Us Section div */}
+      <div className="container mx-auto  py-8 md:py-16 space-y-6 md:space-y-12">
+        {/* Title */}
         <h2
-          className="text-3xl md:text-4xl font-bold text-center font-serif mb-4"
-          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-center font-serif"
+          data-aos="fade"
         >
           About Us
         </h2>
+
+        {/* Subtitle */}
         <p
-          className="container text-base md:text-lg lg:text-xl text-center mb-10 font-serif"
-          data-aos="fade-down"
+          className="text-base md:text-lg lg:text-xl text-center mb-10 font-serif leading-snug max-w-4xl mx-auto"
+          data-aos="fade"
         >
           Riddhi Siddhi Enterprise, based in Vapi, Gujarat, is a trusted
           stockist and wholesaler of high-quality industrial fasteners. We
@@ -111,20 +115,23 @@ const AboutUs = () => {
           industries like construction, engineering, and OEMs across India —
           with ready stock, reliable quality, and timely delivery.
         </p>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-28 py-12">
+
+        {/* About Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-5 py-14 items-stretch">
           {aboutCards.map((card, idx) => {
             const isHovered = hoveredIdx === idx;
+
             return (
               <div
                 key={idx}
-                className={`relative rounded-xl shadow-lg flex flex-col items-center p-8 transition
-                  ${isHovered ? "bg-primary" : "bg-white"}
-                  ${idx === 0 ? "md:mt-8" : ""}
-                `}
+                className={`relative rounded-xl shadow-xl flex flex-col items-center p-6 transition duration-300
+            ${isHovered ? "bg-primary" : "bg-white"}
+          `}
                 onMouseEnter={() => setHoveredIdx(idx)}
                 onMouseLeave={() => setHoveredIdx(null)}
               >
-                <div className="absolute -top-14 left-1/2 -translate-x-1/2 w-[125px] h-[125px] bg-white rounded-full flex items-center justify-center shadow-lg">
+                {/* Icon */}
+                <div className="absolute -top-14 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-md p-2">
                   <img
                     src={card.img}
                     alt={card.title}
@@ -132,24 +139,26 @@ const AboutUs = () => {
                     data-aos="zoom-in"
                   />
                 </div>
+
+                {/* Content */}
                 <div
-                  className="mt-16 flex flex-col items-center"
+                  className="mt-16 flex flex-col items-center "
                   data-aos="fade-left"
                 >
                   <h3
-                    className={`text-2xl font-bold font-serif mb-4 text-center transition-colors duration-200 ${
+                    className={`text-2xl font-bold font-serif mb-4 transition-colors duration-200 ${
                       isHovered ? "text-white" : "text-primary"
                     }`}
                   >
                     {card.title}
                   </h3>
-                  <div
-                    className={`text-base md:text-lg font-serif text-left transition-colors duration-200 ${
+                  <p
+                    className={`text-base md:text-lg font-serif transition-colors duration-200 ${
                       isHovered ? "text-white" : "text-black"
                     }`}
                   >
                     {card.content}
-                  </div>
+                  </p>
                 </div>
               </div>
             );
@@ -157,39 +166,39 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full py-12 ">
+      {/* Mission Vision Values Section */}
+      <div className="container mx-auto py-8 md:py-16 space-y-4 md:space-y-12">
         <h2
-          className="text-3xl md:text-4xl font-bold text-center font-serif mb-2"
+          className="text-3xl md:text-4xl font-bold text-center font-serif"
           data-aos="fade-up"
         >
           Company Mission, Vision and Values
         </h2>
-        <p
-          className="text-center text-lg mb-10"
-          data-aos="fade-down"
-        >
+
+        <p className="text-center text-lg" data-aos="fade-down">
           Defining our mission, vision, and values for purposeful growth.
         </p>
-        {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8"> */}
+
         <div className="flex flex-wrap justify-center gap-6 px-4">
           {missionVisionValues.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-lg flex flex-col items-center overflow-hidden transition p-6"
+              className="bg-white rounded-2xl shadow-lg flex flex-col items-center p-4 transition-all duration-300"
+              style={{ width: "320px", minHeight: "500px" }}
               data-aos="flip-right"
-              style={{ width: "350px", minHeight: "500px" }} // You can adjust these values as needed
             >
               <img
                 src={item.img}
                 alt={item.title}
-                className="object-contain max-w-full"
-                style={{ maxHeight: "300px" }} // Optional: control image height
+                className="object-contain w-full max-h-60"
               />
-              <div className="flex flex-col items-center px-2 mt-4">
-                <h3 className="text-xl font-bold font-serif mb-2 text-center">
+              <div className="flex flex-col items-center px-2 mt-4 flex-1">
+                <h3 className="text-xl font-bold font-serif mb-2 text-center text-primary">
                   {item.title}
                 </h3>
-                <p className="text-base text-center">{item.content}</p>
+                <p className="text-base text-center text-gray-700">
+                  {item.content}
+                </p>
               </div>
             </div>
           ))}

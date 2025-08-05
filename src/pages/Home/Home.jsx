@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="relative w-full max-w-full h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
+        className="relative w-full max-w-full h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         data-aos="fade"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
@@ -53,8 +53,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full container flex flex-col items-center py-8 sm:py-12 px-2 sm:px-4 md:px-0 overflow-x-hidden">
-        <div className=" w-full grid grid-cols-1 xl:grid-cols-2 gap-y-6 items-center">
+      <div className="w-full container flex flex-col items-center py-8 sm:py-12 overflow-x-hidden">
+        <div className=" w-full grid grid-cols-1 xl:grid-cols-2 gap-8  items-center">
           {/* Image Section */}
           <div
             className="flex justify-center"
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
           {/* Text Section */}
           <div
-            className="flex flex-col gap-y-2 justify-center items-center lg:items-start w-full p-5 sm:px-0 text-center lg:text-start"
+            className="flex flex-col gap-y-2 justify-center items-center lg:items-start w-full p-5 sm:px-0 text-center xl:text-start"
             data-aos="fade-left"
           >
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4 sm:mb-5 font-serif w-full">

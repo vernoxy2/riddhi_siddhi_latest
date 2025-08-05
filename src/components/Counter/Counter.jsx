@@ -57,8 +57,10 @@ const CounterCircle = ({ title, end, unit }) => {
 
   return (
     <div ref={ref} className="flex flex-col items-center">
-      <span className="text-lg md:text-2xl font-bold mb-2 text-center text-primary">{title}</span>
-      <div className="w-40 h-40 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-2 ">
+      <span className="text-xl md:text-2xl font-bold mb-2 text-center text-primary">
+        {title}
+      </span>
+      <div className="w-36 h-36 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-1 ">
         {count}
         {unit && <span className="text-base ml-1 md:text-2xl">{unit}</span>}
       </div>
@@ -75,7 +77,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="w-full container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center py-12 bg-white gap-y-14 gap-x-5 2xl:gap-x-2">
+    <div className="container flex flex-col-reverse lg:flex-row items-center justify-center py-8 md:py-16 space-y-4 md:space-y-10 bg-white gap-y-12 gap-x-5 2xl:gap-x-2">
       {/* Left Section */}
       <div
         className="flex-1 flex flex-col items-center lg:items-start px-4 lg:px-0 w-full"
@@ -84,12 +86,12 @@ const Counter = () => {
         <h2 className="text-2xl md:text-[34px] font-bold font-serif mb-2 text-center lg:text-left">
           Built on Strength, Proven by Numbers
         </h2>
-        <p className="text-xl text-[#555555] mb-8 font-serif text-center lg:text-left max-w-md">
+        <p className="md:text-xl text-[#555555] mb-8 font-serif text-center lg:text-left max-w-md leading-snug">
           Our products are engineered for durability, trusted by thousands
           across industries. Backed by data, we deliver consistent performance
           you can count on.
         </p>
-        <div className="flex flex-wrap gap-6 justify-center xl:justify-start w-full">
+        <div className="flex flex-wrap gap-5 justify-center xl:justify-start w-full">
           {counters.map((counter, idx) => (
             <CounterCircle
               key={idx}
@@ -112,15 +114,6 @@ const Counter = () => {
             alt="Counter Section"
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
-          {/* White Lines Overlay */}
-          <div className="absolute inset-0 flex flex-col justify-between pointer-events-none">
-            {[...Array(4)].map((_, i) => (
-              <div
-                key={i}
-                className="border-t-2 border-white w-full opacity-70"
-              ></div>
-            ))}
-          </div>
         </div>
       </div>
     </div>
