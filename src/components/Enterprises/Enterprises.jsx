@@ -50,7 +50,7 @@ const Enterprises = () => {
     });
   }, []);
   return (
-    <div className="w-full container py-8 md:py-16  space-y-4 md:space-y-10 bg-white flex flex-col items-center">
+    <div className="w-full container xl:px-0 py-8 md:py-16  space-y-4 md:space-y-10 bg-white flex flex-col items-center">
       <h2
         className="text-3xl font-bold text-center font-serif"
         data-aos="fade-up"
