@@ -38,19 +38,15 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
-                {/* Phone icon */}
-                {/* <svg
-                  className="w-6 h-6 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z" />
-                </svg> */}
                 <IoCall className="w-6 h-6" />
               </span>
-              9924155593
+              +91 99987 61239
+            </div>
+            <div className="flex items-center mb-4 text-lg">
+              <span className="mr-3">
+                <IoCall className="w-6 h-6" />
+              </span>
+              +91 99241 55593
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
@@ -85,8 +81,8 @@ const ContactUs = () => {
                 <FaLocationDot className="w-6 h-6" />
               </span>
               <span className="text-base md:text-lg">
-                SHOP NO. 7, ZEEL IND. COMPUND, NEAR MAMTA WEIGH BRIDGE COMPUND,
-                2ND PHASE G.I.D.C., VAPI.
+                Shop No. 1, Plot No. A-2/20/1, Near Mamta Weigh Bridge, Beside
+                Ritu Metal, G.I.D.C., Vapi - 396 195
               </span>
             </div>
           </div>

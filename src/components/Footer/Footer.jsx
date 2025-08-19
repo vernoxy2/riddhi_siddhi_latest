@@ -38,11 +38,10 @@ const Footer = () => {
               From power tools to structural fasteners, we’ve got the hardware that holds everything together.
             </div>
             <div className="mb-2 text-sm">
-              SHOP NO. 7, ZEEL IND. COMPOUND,<br />
-              NEAR MAMTA WEIGH BRIDGE COMPOUND, 2ND PHASE<br />
-              G.I.D.C., VAPI.
+              Shop No. 1, Plot No. A-2/20/1, Near Mamta Weigh Bridge, Beside Ritu Metal, G.I.D.C., Vapi - 396 195
             </div>
-            <div className="mb-2 text-sm">OFFICE NO : 9924155593</div>
+            <div className="mb-2 text-sm">Vikrant Patel : 9998761239</div>
+            <div className="mb-2 text-sm">Office No : 9924155593</div>
             <div className="mb-2 text-sm">rsenterprice4275@gmail.com</div>
           </div>
           {/* Quick Links */}
