@@ -23,7 +23,7 @@ const Nuts = () => {
   }, []);
 
   return (
-    <div className="w-full py-12 bg-white flex flex-col items-center container">
+    <div id="nuts" className="w-full py-12 bg-white flex flex-col items-center container">
       <h2
         className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
         data-aos="fade-down"

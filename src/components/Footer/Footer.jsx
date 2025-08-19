@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 
@@ -10,20 +10,18 @@ const quickLinks = [
   { name: 'Contact Us', to: '/contact' },
 ];
 
+// Map footer categories to in-page anchors on the Products page
 const productCategories = [
-  'Hex Bolts',
-  'Nuts',
-  'Washers',
-  'Bolt',
-  'Pipe',
-  'Riverts',
-  'Anchor Fastner',
-  'Pipe Fittings',
+  { name: 'Nuts', id: 'nuts' },
+  { name: 'Bolts', id: 'bolts' },
+  { name: 'Screws', id: 'screws' },
+  { name: 'Washers', id: 'washers' },
 ];
 
 const Footer = () => {
   const [showQuickLinks, setShowQuickLinks] = useState(false);
   const [showProductCategories, setShowProductCategories] = useState(false);
+  const { pathname, hash } = useLocation();
 
   return (
     <footer className="bg-black text-white w-full max-w-full pt-10 pb-4 px-2 font-serif overflow-x-hidden">
@@ -50,9 +48,13 @@ const Footer = () => {
             <ul>
               {quickLinks.map((link) => (
                 <li key={link.name} className="mb-2">
-                  <Link to={link.to} className="hover:underline">
+                  <NavLink
+                    to={link.to}
+                    end={link.to === '/'}
+                    className={({ isActive }) => `hover:underline ${isActive ? 'text-red-500 font-semibold' : ''}`}
+                  >
                     {link.name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -62,8 +64,13 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4 font-serif">Products Categories</h3>
             <ul>
               {productCategories.map((cat) => (
-                <li key={cat} className="mb-2">
-                  {cat}
+                <li key={cat.id} className="mb-2">
+                  <Link
+                    to={`/products#${cat.id}`}
+                    className="hover:underline"
+                  >
+                    {cat.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -96,9 +103,13 @@ const Footer = () => {
               <ul className="mt-4 pl-2">
                 {quickLinks.map((link) => (
                   <li key={link.name} className="mb-2">
-                    <Link to={link.to} className="hover:underline">
+                    <NavLink
+                      to={link.to}
+                      end={link.to === '/'}
+                      className={({ isActive }) => `hover:underline ${isActive ? 'text-red-500 font-semibold' : ''}`}
+                    >
                       {link.name}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -116,8 +127,13 @@ const Footer = () => {
             {showProductCategories && (
               <ul className="mt-4 pl-2">
                 {productCategories.map((cat) => (
-                  <li key={cat} className="mb-2">
-                    {cat}
+                  <li key={cat.id} className="mb-2">
+                    <Link
+                      to={`/products#${cat.id}`}
+                      className="hover:underline"
+                    >
+                      {cat.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
