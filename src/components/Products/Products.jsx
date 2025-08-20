@@ -72,13 +72,13 @@ const Products = () => {
         Our Product Range
       </h2>
       <p
-        className="text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif"
+        className="text-lg md:text-xl lg:text-2xl text-[#555555] mb-10 text-center font-serif"
         data-aos="fade-down"
       >
         We offer a comprehensive selection of industrial fasteners, available in
         multiple sizes, grades, and coatings
       </p>
-      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-14">
+      <div className="max-w-7xl w-full grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-14 md:gap-x-14">
         {products.map((product, idx) => (
           <div
             key={idx}
@@ -93,21 +93,21 @@ const Products = () => {
               />
               {/* Overlay for hover */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 px-4">
-                <span className="text-white text-2xl font-bold font-serif mb-4 text-center drop-shadow-lg">
+                <span className="text-white md:text-2xl font-bold font-serif mb-2 md:mb-4 text-center drop-shadow-lg">
                   {product.title}
                 </span>
-                <p className="text-white text-base font-serif text-center capitalize">
+                <p className="text-white text-[10px] md:text-base font-serif text-center capitalize">
                   {product.description}
                 </p>
               </div>
               {/* Title for non-hover */}
-              <span className="absolute top-6 left-0 w-full text-center text-white text-2xl font-bold font-serif drop-shadow-lg group-hover:opacity-0 transition-opacity duration-300">
+              <span className="absolute top-2 md:top-6 left-0 w-full text-center text-white md:text-2xl font-bold font-serif drop-shadow-lg group-hover:opacity-0 transition-opacity duration-300">
                 {product.title}
               </span>
             </div>
-            <div className="w-full py-6 flex justify-center bg-white">
+            <div className="w-full py-3 md:py-6 flex justify-center bg-white">
               <Link to={`/products#${product.id}`}>
-                <button className="text-xl font-bold text-black hover:text-primary transition">
+                <button className="md:text-xl font-bold text-black hover:text-primary transition">
                   View More
                 </button>
               </Link>

@@ -27,7 +27,7 @@ const ContactUs = () => {
           data-aos="zoom-in"
         >
           {/* Left: Info */}
-          <div className="flex-1 flex flex-col justify-center border-b md:border-b-0 md:border-r border-black pb-8 md:pb-0 md:pr-10">
+          <div className="flex-1 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-black pb-8 md:pb-0 md:pr-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center md:text-left mb-6 font-serif">
               Contact Us
             </h2>
@@ -36,17 +36,19 @@ const ContactUs = () => {
               From power tools to structural fasteners, we’ve got the hardware
               that holds everything together.
             </div>
-            <div className="flex items-center mb-4 text-lg">
-              <span className="mr-3">
-                <IoCall className="w-6 h-6" />
-              </span>
-              +91 99987 61239
-            </div>
-            <div className="flex items-center mb-4 text-lg">
-              <span className="mr-3">
-                <IoCall className="w-6 h-6" />
-              </span>
-              +91 99241 55593
+            <div className="md:flex gap-4">
+              <div className="flex items-center mb-4 text-lg">
+                <span className="mr-2">
+                  <IoCall className="w-6 h-6" />
+                </span>
+                +91 99987 61239
+              </div>
+              <div className="flex items-center mb-4 text-lg">
+                <span className="mr-2">
+                  <IoCall className="w-6 h-6" />
+                </span>
+                +91 99241 55593
+              </div>
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">

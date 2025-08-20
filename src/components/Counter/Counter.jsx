@@ -57,12 +57,12 @@ const CounterCircle = ({ title, end, unit }) => {
 
   return (
     <div ref={ref} className="flex flex-col items-center">
-      <span className="text-xl md:text-2xl font-bold mb-2 text-center text-primary">
+      <span className="md:text-xl lg:text-2xl font-bold mb-2 text-center text-primary">
         {title}
       </span>
-      <div className="w-36 h-36 flex flex-col items-center justify-center rounded-full border-4 border-primary text-4xl font-bold text-gray-900 mt-1 ">
+      <div className="w-20 h-20 md:w-36 md:h-36 flex flex-col items-center justify-center rounded-full border-2 md:border-4 border-primary text-2xl md:text-4xl font-bold text-gray-900 mt-1 ">
         {count}
-        {unit && <span className="text-base ml-1 md:text-2xl">{unit}</span>}
+        {unit && <span className="text-sm ml-1 md:text-2xl">{unit}</span>}
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const Products = () => {
             THREADED RODS & STUDS
           </h1>
           <p
-            className="text-center text-lg md:text-xl md:mx-5 leading-snug"
+            className="text-center  md:text-xl md:mx-5 leading-snug"
             data-aos="fade-left"
           >
             We supply high-quality threaded rods and studs designed for reliable
@@ -58,7 +58,7 @@ const Products = () => {
             CUSTOM FASTENERS
           </h1>
           <p
-            className="text-center text-lg md:text-xl md:mx-5 leading-snug"
+            className="text-center  md:text-xl md:mx-5 leading-snug"
             data-aos="fade-right"
           >
             When standard solutions don’t fit, we offer custom fasteners

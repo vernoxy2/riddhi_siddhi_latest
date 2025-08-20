@@ -27,7 +27,7 @@ const Screws = () => {
         SCREWS
       </h2>
       <p
-        className="text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
+        className="md:text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
         data-aos="fade-up"
       >
         From wood screws to machine screws and self-tapping screws, we stock a
@@ -36,15 +36,15 @@ const Screws = () => {
         Available in different head types, drive styles, and materials, they are
         perfect for use in carpentry, metalwork, electronics, and more.
       </p>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 lg:px-10">
         {screws.map((screw, idx) => (
           <div
             key={idx}
             className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
             data-aos="flip-left"
           >
-            <div className="bg-black py-6 text-center">
-              <span className="text-2xl font-bold text-white font-serif">
+            <div className="bg-black py-3 md:py-6 text-center">
+              <span className="text-sm md:text-2xl font-bold text-white font-serif">
                 {screw.name}
               </span>
             </div>
@@ -52,7 +52,7 @@ const Screws = () => {
               <img
                 src={screw.img}
                 alt={screw.name}
-                className="w-full h-72 object-cover object-center"
+                className="w-full md:h-72 object-cover object-center"
                 draggable="false"
               />
             </div>

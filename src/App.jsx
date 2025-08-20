@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer';
 import ScrollToTop from './ScrollToTop';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // Make sure to import AOS CSS
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   useEffect(() => {

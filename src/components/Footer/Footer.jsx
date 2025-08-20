@@ -198,7 +198,8 @@ const Footer = () => {
               <br />
               G.I.D.C., VAPI.
             </div>
-            <div className="mb-2 text-sm">OFFICE NO : 9924155593</div>
+            <div className="mb-2 text-sm">Vikrant Patel : 9998761239</div>
+            <div className="mb-2 text-sm">Office No : 9924155593</div>
             <div className="mb-2 text-sm">rsenterprice4275@gmail.com</div>
           </div>
         </div>
