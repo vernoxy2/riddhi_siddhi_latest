@@ -37,7 +37,7 @@ const Washers = () => {
         ensuring durability, corrosion resistance, and optimal performance in
         any application.
       </p>
-      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 lg:px-10">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:px-10">
         {washers.map((washer, idx) => (
           <div
             key={idx}

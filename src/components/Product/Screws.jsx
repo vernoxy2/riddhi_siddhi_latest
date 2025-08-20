@@ -36,7 +36,7 @@ const Screws = () => {
         Available in different head types, drive styles, and materials, they are
         perfect for use in carpentry, metalwork, electronics, and more.
       </p>
-      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 lg:px-10">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:px-10">
         {screws.map((screw, idx) => (
           <div
             key={idx}

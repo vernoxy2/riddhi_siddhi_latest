@@ -40,7 +40,7 @@ const Bolts = () => {
         thread types. We supply bulk quantities for construction, machinery, and
         fabrication projects, with quality and consistency you can count on.
       </p>
-      <div className="w-full  grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 lg:px-10">
+      <div className="w-full  grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-10">
         {bolts.map((bolt, idx) => (
           <div
             key={idx}
