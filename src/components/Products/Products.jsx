@@ -78,7 +78,7 @@ const Products = () => {
         We offer a comprehensive selection of industrial fasteners, available in
         multiple sizes, grades, and coatings
       </p>
-      <div className="max-w-7xl w-full grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-y-14 md:gap-x-14">
+      <div className="max-w-7xl w-full grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-y-14 md:gap-x-14">
         {products.map((product, idx) => (
           <div
             key={idx}
