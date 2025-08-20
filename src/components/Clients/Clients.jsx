@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import clientImg from "../../assets/Home/clientImg.png";
 import Slider from "react-slick";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -76,12 +77,12 @@ const Clients = () => {
         they bring to our business. Customer feedback is vital in helping us get it right.
       </p>
 
-      <div className="w-full">
-        <Slider {...settings} className="">
+      <div className="w-full px-4">
+        <Slider {...settings}>
           {testimonials.map((testimonial, idx) => (
             <div key={idx} className="px-4">
               <div
-                className="bg-gray-50 rounded-2xl flex flex-col items-center my-2 p-6 transition hover:shadow-xl h-full text-center"
+                className="bg-gray-50 rounded-2xl shadow-md flex flex-col items-center my-3 p-6 transition hover:shadow-xl h-full text-center"
                 data-aos="zoom-in-up"
               >
                 <img
