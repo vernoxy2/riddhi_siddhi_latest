@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import hexBoltImg from "../../assets/Products/hexBoltImg.jpg";
 import allenBoltImg from "../../assets/Products/allenBoltImg.jpg";
 import eyeBoltImg from "../../assets/Products/eyeBoltImg.jpg";
-import anchorBoltImg from "../../assets/Products/anchorBoltImg.jpg";
+import foundationBoltImg from "../../assets/Products/foundationBoltImg.jpg";
 
 
 import AOS from "aos";
@@ -12,7 +12,7 @@ const bolts = [
   { name: "HEX BOLT", img: hexBoltImg },
   { name: "ALLEN BOLT", img: allenBoltImg },
   { name: "EYE BOLT", img: eyeBoltImg },
-  { name: "FOUNDATION BOLT", img: anchorBoltImg },
+  { name: "FOUNDATION BOLT", img: foundationBoltImg },
 ];
 
 const Bolts = () => {
@@ -56,7 +56,7 @@ const Bolts = () => {
             <img
               src={bolt.img}
               alt={bolt.name}
-              className="w-full md:h-72 object-cover object-center"
+              className="w-full h-full md:h-72 object-cover object-center"
               draggable="false"
             />
           </div>

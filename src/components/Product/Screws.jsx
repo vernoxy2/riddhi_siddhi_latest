@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import selfTappingScrewImg from "../../assets/Products/selfTappingScrewImg.jpg";
-import machineScrewImg from "../../assets/Products/machineScrewImg.jpg";
+import selfTappingScrewImg from "../../assets/Products/SDAScrew.jpg";
+// import machineScrewImg from "../../assets/Products/machineScrewImg.jpg";
+import universalClampImg  from "../../assets/Products/universalClampImg.jpg";
 import woodScrewImg from "../../assets/Products/woodScrewImg.jpg";
 
 import AOS from "aos";
@@ -8,7 +9,7 @@ import "aos/dist/aos.css";
 
 const screws = [
   { name: "SELF-DRILLING SCREW", img: selfTappingScrewImg },
-  { name: "UNIVERSAL CLAMPS", img: machineScrewImg },
+  { name: "UNIVERSAL CLAMPS", img: universalClampImg },
   { name: "PIN CLAMPS", img: woodScrewImg },
 ];
 
@@ -19,7 +20,7 @@ const Screws = () => {
     });
   }, []);
   return (
-    <div id="screws" className="w-full py-12 bg-white flex flex-col items-center container">
+    <div id="screws" className="w-full py-12 bg-white flex flex-col  items-center container">
       <h2
         className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
         data-aos="fade-down"
@@ -40,11 +41,11 @@ const Screws = () => {
         {screws.map((screw, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col "
             data-aos="flip-left"
           >
-            <div className="bg-black py-3 md:py-6 text-center">
-              <span className="text-sm md:text-2xl font-bold text-white font-serif">
+            <div className="bg-black py-3 md:py-6 text-center flex flex-col justify-between h-full">
+              <span className="text-sm md:text-2xl font-bold text-white font-serif my-auto">
                 {screw.name}
               </span>
             </div>
@@ -52,7 +53,7 @@ const Screws = () => {
               <img
                 src={screw.img}
                 alt={screw.name}
-                className="w-full md:h-72 object-cover object-center"
+                className=" h-auto md:h-75 object-cover object-center "
                 draggable="false"
               />
             </div>

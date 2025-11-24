@@ -16,11 +16,11 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-full min-h-screen items-center justify-center overflow-x-hidden">
+    <div className="w-full max-w-full min-h-screen items-center justify-center overflow-x-hidden ">
       <img
         src={productsImg}
         alt="productsImg"
-        className="w-full max-w-full h-full object-cover"
+        className="w-full max-w-full h-[200px] md:h-[400px] xl:h-[80vh] object-cover"
         data-aos="fade-up"
       />
       <Nuts />
@@ -37,7 +37,7 @@ const Products = () => {
             THREADED RODS & STUDS
           </h1>
           <p
-            className="text-center  md:text-xl md:mx-5 leading-snug"
+            className="text-center md:text-xl md:mx-5 leading-snug"
             data-aos="fade-left"
           >
             We supply high-quality threaded rods and studs designed for reliable

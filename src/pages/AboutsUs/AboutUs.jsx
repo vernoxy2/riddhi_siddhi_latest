@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import aboutUsImage from "../../assets/About/aboutHeaderImg.png";
+import aboutUsImage from "../../assets/About/aboutHeader.png";
 import img1 from "../../assets/About/img1.png";
 import img2 from "../../assets/About/img2.png";
 import img3 from "../../assets/About/img3.png";
@@ -84,10 +84,10 @@ const AboutUs = () => {
   }, []);
 
   const navigate = useNavigate();
-
   const [hoveredIdx, setHoveredIdx] = useState(null);
+  
   return (
-    <div className="w-full max-w-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
+    <div className="w-full max-h-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
       <img
         src={aboutUsImage}
         alt="aboutUsImage"

@@ -56,7 +56,7 @@ const Nuts = () => {
             <img
               src={nut.img}
               alt={nut.name}
-              className="w-full md:h-72 object-cover object-center"
+              className="w-full md:h-72  object-cover object-center"
               draggable="false"
             />
           </div>

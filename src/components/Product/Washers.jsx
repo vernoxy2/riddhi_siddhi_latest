@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/plainWasherImg.jpg";
-import springWasherImg from "../../assets/Products/springWasherImg.jpg";
-import splitWasherImg from "../../assets/Products/splitWasherImg.jpg";
+// import springWasherImg from "../../assets/Products/springWasherImg.jpg";
+import springWasher from "../../assets/Products/springWasher.jpg";
+// import splitWasherImg from "../../assets/Products/splitWasherImg.jpg";
+import hillSideWasher from "../../assets/Products/hillSideWasher.jpg";
+import taperWasher from "../../assets/Products/taperWasher.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
   { name: "PLAIN WASHER", img: plainWasherImg },
-  { name: "SPRING WASHER", img: springWasherImg },
-  { name: "HILLSIDE WASHER", img: splitWasherImg },
-  {name : "TAPER WASHER", img: splitWasherImg}
+  { name: "SPRING WASHER", img: springWasher },
+  { name: "HILLSIDE WASHER", img: hillSideWasher },
+  {name : "TAPER WASHER", img: taperWasher}
 ];
 
 const Washers = () => {
@@ -45,7 +48,7 @@ const Washers = () => {
             className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
             data-aos="flip-right"
           >
-            <div className="bg-black py-3  md:py-6 text-center">
+            <div className="bg-black py-3  md:py-6 text-center flex flex-col justify-between h-full">
               <span className="md:text-2xl font-bold text-white font-serif">
                 {washer.name}
               </span>
@@ -53,7 +56,7 @@ const Washers = () => {
             <img
               src={washer.img}
               alt={washer.name}
-              className="w-full md:h-72 object-cover object-center"
+              className="w-full md:h-75 object-cover object-center"
               draggable="false"
             />
           </div>

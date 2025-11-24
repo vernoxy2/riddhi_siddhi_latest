@@ -29,24 +29,24 @@ const Home = () => {
   return (
     <>
       <div
-        className="relative w-full max-w-full h-[70vh] md:h-[80vh] flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
-        data-aos="fade"
+        className="relative w-full h-[210px] md:h-[400px] max-w-full xl:h-[70vh]  flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
+        data-aos="fade-up"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
-          className="ml-2 sm:ml-8 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-5 lg:p-8 rounded-lg flex flex-col items-start w-full"
+          className="ml-2 sm:ml-4 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-5 lg:p-8 rounded-lg flex flex-col items-start w-full gap-2 sm:gap-4  "
           data-aos="fade-right"
         >
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4 text-black font-serif">
+          <h1 className="text-xl sm:text-2xl md:text-5xl font-bold  text-black font-serif">
             Your Trusted Stockist for Industrial Fasteners
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl mb-4 sm:mb-8 text-black font-serif">
+          <p className="text-sm sm:text-base md:text-2xl text-black font-serif">
             Explore Our Range of Industrial Nuts, Bolts, Washer, Screws and other fastners in GI, MS, SS &
             High Tensile.
           </p>
           <button
             onClick={() => navigate("/contact")}
-            className="bg-primary hover:bg-red-600 text-white text-base sm:text-lg md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition"
+            className="bg-primary hover:bg-red-600 text-white text-sm sm:text-base md:text-xl font-semibold px-6 sm:px-10 md:px-12 py-2 sm:py-3 md:py-4 rounded-lg shadow-md transition"
           >
             Get Quote
           </button>

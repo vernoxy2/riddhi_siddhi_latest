@@ -15,8 +15,8 @@ import "slick-carousel/slick/slick-theme.css";
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1500,
-      once: true, // Ensures animation only runs once
+      duration: 1200,
+      once: false, // Ensures animation only runs once
       offset: 200, // Controls when the animation triggers
     });
   }, []);

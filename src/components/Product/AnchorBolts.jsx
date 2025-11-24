@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/plainWasherImg.jpg";
 import springWasherImg from "../../assets/Products/springWasherImg.jpg";
-import splitWasherImg from "../../assets/Products/splitWasherImg.jpg";
+import splitWasherImg from "../../assets/Products/uBolt.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
