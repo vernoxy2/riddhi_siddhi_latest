@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import hexBoltImg from "../../assets/Products/hexBoltImg.jpg";
-import carriageBoltImg from "../../assets/Products/carriageBoltImg.jpg";
+import allenBoltImg from "../../assets/Products/allenBoltImg.jpg";
 import eyeBoltImg from "../../assets/Products/eyeBoltImg.jpg";
 import anchorBoltImg from "../../assets/Products/anchorBoltImg.jpg";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const bolts = [
   { name: "HEX BOLT", img: hexBoltImg },
-  { name: "CARRIAGE BOLT", img: carriageBoltImg },
+  { name: "ALLEN BOLT", img: allenBoltImg },
   { name: "EYE BOLT", img: eyeBoltImg },
-  { name: "ANCHOR BOLT", img: anchorBoltImg },
+  { name: "FOUNDATION BOLT", img: anchorBoltImg },
 ];
 
 const Bolts = () => {

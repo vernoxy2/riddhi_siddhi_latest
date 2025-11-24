@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import homeHeader from "../../assets/Home/homeHeader1.png";
+import homeHeader from "../../assets/About/img11.png";
 import aboutSectionImg from "../../assets/Home/aboutSectionImg.jpg";
 
 import Industries from "../../components/Industries/Industries";
@@ -41,7 +41,7 @@ const Home = () => {
             Your Trusted Stockist for Industrial Fasteners
           </h1>
           <p className="text-base sm:text-lg md:text-2xl mb-4 sm:mb-8 text-black font-serif">
-            Explore Our Range of Industrial Nuts, Bolts & Screws in GI, MS, SS &
+            Explore Our Range of Industrial Nuts, Bolts, Washer, Screws and other fastners in GI, MS, SS &
             High Tensile.
           </p>
           <button
@@ -119,7 +119,7 @@ const Home = () => {
                 />
                 <span className="text-base sm:text-2xl text-[#555555]">
                   Materials including Mild Steel, Stainless Steel (202/304/316),
-                  Brass, and Galvanized coatings
+                  High Tensile, and Galvanized coatings
                 </span>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3">

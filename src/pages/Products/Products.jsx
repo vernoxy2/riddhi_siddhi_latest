@@ -4,7 +4,7 @@ import Nuts from "../../components/Product/Nuts";
 import Bolts from "../../components/Product/Bolts";
 import Screws from "../../components/Product/Screws";
 import Washers from "../../components/Product/Washers";
-
+import AnchorBolts from "../../components/Product/AnchorBolts";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,6 +27,7 @@ const Products = () => {
       <Bolts />
       <Screws />
       <Washers />
+      <AnchorBolts />
       <div className="lg:space-y-16 space-y-8 lg:py-12 font-serif container py-16">
         <div className="items-center justify-centern space-y-4">
           <h1

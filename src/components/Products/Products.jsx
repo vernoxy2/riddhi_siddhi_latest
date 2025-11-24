@@ -34,7 +34,7 @@ const products = [
   },
   {
     id: "screws",
-    title: "screws",
+    title: "sds screws & allen bolt",
     img: screws,
     description:
       "Choose from machine screws, self-tapping screws, and other types, in various sizes and finishes.",
@@ -48,7 +48,7 @@ const products = [
   },
   {
     id: "screws",
-    title: "Custom Fasteners – As per drawing / specification",
+    title: "Foundation Bolt & Custom Fasteners",
     img: customFastenersImg1,
     description:
       "We manufacture and supply custom fasteners as per your drawing or specification.",
@@ -93,7 +93,7 @@ const Products = () => {
               />
               {/* Overlay for hover */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-black bg-opacity-80 transition-opacity duration-300 px-4">
-                <span className="text-white md:text-2xl font-bold font-serif mb-2 md:mb-4 text-center drop-shadow-lg">
+                <span className="text-white md:text-2xl font-bold font-serif mb-2 md:mb-4 text-center drop-shadow-lg uppercase">
                   {product.title}
                 </span>
                 <p className="text-white text-[10px] md:text-base font-serif text-center capitalize">
@@ -101,7 +101,7 @@ const Products = () => {
                 </p>
               </div>
               {/* Title for non-hover */}
-              <span className="absolute top-2 md:top-6 left-0 w-full text-center text-white md:text-2xl font-bold font-serif drop-shadow-lg group-hover:opacity-0 transition-opacity duration-300">
+              <span className="absolute top-2 md:top-6 left-0 w-full text-center text-white md:text-2xl font-bold font-serif drop-shadow-lg group-hover:opacity-0 transition-opacity duration-300 uppercase">
                 {product.title}
               </span>
             </div>

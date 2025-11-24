@@ -36,7 +36,7 @@ const aboutCards = [
         <li>Screws – Self-tapping, Machine.</li>
         <li>Washers</li>
         <li>Threaded Rods & Studs</li>
-        <li>Custom Fasteners – MS, SS 304/316, Brass, GI</li>
+        <li>Custom Fasteners – MS, SS 304/316, 8.8 & 10.9 Grade, GI</li>
       </ul>
     ),
   },

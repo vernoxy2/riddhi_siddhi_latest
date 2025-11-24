@@ -2,18 +2,17 @@ import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/plainWasherImg.jpg";
 import springWasherImg from "../../assets/Products/springWasherImg.jpg";
 import splitWasherImg from "../../assets/Products/splitWasherImg.jpg";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
-  { name: "PLAIN WASHER", img: plainWasherImg },
-  { name: "SPRING WASHER", img: springWasherImg },
-  { name: "HILLSIDE WASHER", img: splitWasherImg },
-  {name : "TAPER WASHER", img: splitWasherImg}
+  { name: "PIN BOLT", img: plainWasherImg },
+  { name: "WEDGE BOLT", img: springWasherImg },
+  { name: "ROUND BOLT", img: splitWasherImg },
+  {name : "U BOLT", img: splitWasherImg}
 ];
 
-const Washers = () => {
+const AnchorBolts = () => {
   useEffect(() => {
     AOS.init({
       once: false, // whether animation should happen only once
@@ -22,10 +21,10 @@ const Washers = () => {
   return (
     <div id="washers" className="w-full py-12 bg-white flex flex-col items-center container">
       <h2
-        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
+        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif uppercase"
         data-aos="fade-down"
       >
-        WASHERS
+        Anchor Bolts
       </h2>
       <p
         className="md:text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
@@ -63,4 +62,5 @@ const Washers = () => {
   );
 };
 
-export default Washers;
+export default AnchorBolts;
+

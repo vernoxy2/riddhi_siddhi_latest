@@ -7,9 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const screws = [
-  { name: "SELF-TAPPING SCREW", img: selfTappingScrewImg },
-  { name: "MACHINE SCREW", img: machineScrewImg },
-  { name: "WOOD SCREW", img: woodScrewImg },
+  { name: "SELF-DRILLING SCREW", img: selfTappingScrewImg },
+  { name: "UNIVERSAL CLAMPS", img: machineScrewImg },
+  { name: "PIN CLAMPS", img: woodScrewImg },
 ];
 
 const Screws = () => {
@@ -24,7 +24,7 @@ const Screws = () => {
         className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
         data-aos="fade-down"
       >
-        SCREWS
+        SCREWS AND CLAMPS
       </h2>
       <p
         className="md:text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
