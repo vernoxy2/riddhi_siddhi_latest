@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import nutImg from "../../assets/Home/Nutbolt.webp";
 import uboltImg from "../../assets/Home/UBolt.webp";
-import AnchorFastner from "../../assets/Home/AnchorFastner.webp";
+import anchorFastner from "../../assets/Home/anchorFastnerImg.webp";
 import screws from "../../assets/Home/screws.webp";
 import threadedRodsImg from "../../assets/Home/threadedRodsImg.webp";
 import customFastenersImg1 from "../../assets/Home/customFastenersImg1.webp";
@@ -28,7 +28,7 @@ const products = [
   {
     id: "bolts",
     title: "Anchor Fastner",
-    img: AnchorFastner,
+    img: anchorFastner,
     description:
       "We are stockists of Anchor Fasteners, specializing in Pin-Type Anchor Fasteners.The sizes of Anchor Fasteners that are readily available in our stock 24/7 include:",
   },

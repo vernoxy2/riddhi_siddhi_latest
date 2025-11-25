@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import selfTappingScrewImg from "../../assets/Products/SDAScrew.jpg";
-// import machineScrewImg from "../../assets/Products/machineScrewImg.jpg";
-import universalClampImg  from "../../assets/Products/universalClampImg.jpg";
+import selfTappingScrewImg from "../../assets/Products/SDAScrew1.webp";
+import universalClampImg  from "../../assets/Products/universalClampImg1.webp";
 import woodScrewImg from "../../assets/Products/woodScrewImg.jpg";
 
 import AOS from "aos";

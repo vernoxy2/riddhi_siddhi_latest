@@ -69,8 +69,8 @@ const Clients = () => {
       </h3>
       <h2
         className="text-3xl md:text-[40px] font-bold text-center mb-6 font-serif"
-        data-aos="fade-up"
-      >
+
+         >
         WHAT CLIENTS SAY
       </h2>
       <p

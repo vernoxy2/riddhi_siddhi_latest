@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import hexNutImg from "../../assets/Products/hexNutImg.jpg";
-import lockNutImg from "../../assets/Products/lockNutImg.jpg";
-import wingNutImg from "../../assets/Products/wingNutImg.jpg";
-import domeNutImg from "../../assets/Products/domeNutImg.jpg";
+import hexNutImg from "../../assets/Products/hexNutImg1.webp";
+import lockNutImg from "../../assets/Products/lockNutImg1.webp";
+import wingNutImg from "../../assets/Products/wingNutImg1.webp";
+import domeNutImg from "../../assets/Products/domeNutImg1.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

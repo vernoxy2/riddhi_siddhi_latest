@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
-import plainWasherImg from "../../assets/Products/plainWasherImg.jpg";
-import springWasherImg from "../../assets/Products/springWasherImg.jpg";
-import splitWasherImg from "../../assets/Products/uBolt.jpg";
+import plainWasherImg from "../../assets/Products/pinType.webp";
+import springWasherImg from "../../assets/Products/springWasherImg.webp";
+import uBoltImg from "../../assets/Products/uBolt1.webp";
+import ravalBoltImg from "../../assets/Products/ravalBoltImg.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
   { name: "PIN BOLT", img: plainWasherImg },
   { name: "WEDGE BOLT", img: springWasherImg },
-  { name: "ROUND BOLT", img: splitWasherImg },
-  {name : "U BOLT", img: splitWasherImg}
+  { name: "RAVAL BOLT", img: ravalBoltImg },
+  {name : "U BOLT", img: uBoltImg}
 ];
 
 const AnchorBolts = () => {

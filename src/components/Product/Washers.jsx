@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import plainWasherImg from "../../assets/Products/plainWasherImg.jpg";
-// import springWasherImg from "../../assets/Products/springWasherImg.jpg";
-import springWasher from "../../assets/Products/springWasher.jpg";
-// import splitWasherImg from "../../assets/Products/splitWasherImg.jpg";
-import hillSideWasher from "../../assets/Products/hillSideWasher.jpg";
-import taperWasher from "../../assets/Products/taperWasher.jpg";
+import plainWasherImg from "../../assets/Products/plainWasherImG1.webp";
+import springWasher from "../../assets/Products/springWasherImg.webp";
+import hillSideWasher from "../../assets/Products/hillSideWasher1.webp";
+import taperWasher from "../../assets/Products/taperWasher1.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import hexBoltImg from "../../assets/Products/hexBoltImg.jpg";
-import allenBoltImg from "../../assets/Products/allenBoltImg.jpg";
-import eyeBoltImg from "../../assets/Products/eyeBoltImg.jpg";
-import foundationBoltImg from "../../assets/Products/foundationBoltImg.jpg";
+import hexBoltImg from "../../assets/Products/hexBoltImg1.webp";
+import allenBoltImg1 from "../../assets/Products/allenBoltImg1.webp";
+import eyeBoltImg from "../../assets/Products/eyeBoltImg1.webp";
+import foundationBoltImg from "../../assets/Products/foundationBoltImg1.webp";
 
 
 import AOS from "aos";
@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 const bolts = [
   { name: "HEX BOLT", img: hexBoltImg },
-  { name: "ALLEN BOLT", img: allenBoltImg },
+  { name: "ALLEN BOLT", img: allenBoltImg1 },
   { name: "EYE BOLT", img: eyeBoltImg },
   { name: "FOUNDATION BOLT", img: foundationBoltImg },
 ];
@@ -41,11 +41,11 @@ const Bolts = () => {
         thread types. We supply bulk quantities for construction, machinery, and
         fabrication projects, with quality and consistency you can count on.
       </p>
-      <div className="w-full  grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-10">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-10">
         {bolts.map((bolt, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col justify-between"
             data-aos="flip-right"
           >
             <div className="bg-black py-3 md:py-6 text-center">
@@ -56,7 +56,7 @@ const Bolts = () => {
             <img
               src={bolt.img}
               alt={bolt.name}
-              className="w-full h-full md:h-72 object-cover object-center"
+              className="w-full h-full md:h-75 object-cover object-center"
               draggable="false"
             />
           </div>
