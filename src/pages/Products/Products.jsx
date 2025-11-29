@@ -4,7 +4,7 @@ import Nuts from "../../components/Product/Nuts";
 import Bolts from "../../components/Product/Bolts";
 import Screws from "../../components/Product/Screws";
 import Washers from "../../components/Product/Washers";
-
+import AnchorBolts from "../../components/Product/AnchorBolts";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,17 +16,18 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-full min-h-screen items-center justify-center overflow-x-hidden">
+    <div className="w-full max-w-full min-h-screen items-center justify-center overflow-x-hidden ">
       <img
         src={productsImg}
         alt="productsImg"
-        className="w-full max-w-full h-full object-cover"
+        className="w-full max-w-full h-[200px] md:h-[400px] xl:h-[80vh] object-cover"
         data-aos="fade-up"
       />
       <Nuts />
       <Bolts />
       <Screws />
       <Washers />
+      <AnchorBolts />
       <div className="lg:space-y-16 space-y-8 lg:py-12 font-serif container py-16">
         <div className="items-center justify-centern space-y-4">
           <h1
@@ -36,7 +37,7 @@ const Products = () => {
             THREADED RODS & STUDS
           </h1>
           <p
-            className="text-center  md:text-xl md:mx-5 leading-snug"
+            className="text-center md:text-xl md:mx-5 leading-snug"
             data-aos="fade-left"
           >
             We supply high-quality threaded rods and studs designed for reliable

@@ -6,24 +6,41 @@ import "aos/dist/aos.css";
 
 const testimonials = [
   {
-    quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
+    
+    quote: `"They offer prompt, friendly and dependable support throughout the entire ordering and delivery process"`,
     name: "Niral Shah",
     role: "Owner",
     compny: "Shah Enterprise",
     img: clientImg,
   },
   {
-    quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
+    
+    quote: `"Their fasteners are manufactured according to industry standards, ensuring strength, accuracy and consistent quality"`,
     name: "Viral Bulsara",
     role: "Owner",
     compny: "Viral V-care",
     img: clientImg,
   },
+ 
   {
-    quote: `"Reliable service, competitive pricing, and top-notch quality — we've been sourcing fasteners from them for years and they never disappoint. Highly recommended!"`,
+    quote: `"From standard bolts and nuts to specialized and custom-engineered fasteners, they offer a comprehensive product line that meets the needs of various industries — construction, automotive, manufacturing, marine, and more"`,
     name: "Pramit Parmar",
     role: "Owner",
     compny: "Krutagna Feb-Tech",
+    img: clientImg,
+  },
+  {
+    quote: `"Exceptional service from start to finish: clear communication, meticulous order handling and reliable, punctual delivery every single time"`,
+    name: "Satish Gajara",
+    role: "Owner",
+    company: "Shreyash Enterprise",
+    img: clientImg,
+  },
+  {
+    quote: `"Affordable prices and unwavering support that’s what sets them apart. They monitor market rates smartly and handle all our orders with speed and precision"`,
+    name: "Harsh Patel",
+    role: "Owner",
+    company: "Bhagawati Enterprise",
     img: clientImg,
   },
 ];
@@ -45,8 +62,8 @@ const Clients = () => {
       </h3>
       <h2
         className="text-3xl md:text-[40px] font-bold text-center mb-6 font-serif"
-        data-aos="fade-up"
-      >
+
+         >
         WHAT CLIENTS SAY
       </h2>
       <p
@@ -54,8 +71,8 @@ const Clients = () => {
         data-aos="fade-down"
       >
         We place huge value on strong relationships and have seen the benefit
-        they bring to our business . Customer feedback is vital in helping us to
-        get it right.
+        they bring to our business. Customer feedback is vital in helping us get
+        it right.
       </p>
       <div className="w-full gap-9  grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-x-12 lg:px-10">
         {testimonials.map((testimonial, idx) => (

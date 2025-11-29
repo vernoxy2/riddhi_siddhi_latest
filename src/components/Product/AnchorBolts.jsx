@@ -1,20 +1,19 @@
 import React, { useEffect } from "react";
-import plainWasherImg from "../../assets/Products/plainWasherImG1.webp";
-import springWasher from "../../assets/Products/springWasherImg.webp";
-import hillSideWasher from "../../assets/Products/hillSideWasher1.webp";
-import taperWasher from "../../assets/Products/taperWasher1.webp";
-
+import plainWasherImg from "../../assets/Products/pinType.webp";
+import springWasherImg from "../../assets/Products/springWasherImg.webp";
+import uBoltImg from "../../assets/Products/uBolt1.webp";
+import ravalBoltImg from "../../assets/Products/ravalBoltImg.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
-  { name: "PLAIN WASHER", img: plainWasherImg },
-  { name: "SPRING WASHER", img: springWasher },
-  { name: "HILLSIDE WASHER", img: hillSideWasher },
-  {name : "TAPER WASHER", img: taperWasher}
+  { name: "PIN BOLT", img: plainWasherImg },
+  { name: "WEDGE BOLT", img: springWasherImg },
+  { name: "RAVAL BOLT", img: ravalBoltImg },
+  {name : "U BOLT", img: uBoltImg}
 ];
 
-const Washers = () => {
+const AnchorBolts = () => {
   useEffect(() => {
     AOS.init({
       once: false, // whether animation should happen only once
@@ -23,10 +22,10 @@ const Washers = () => {
   return (
     <div id="washers" className="w-full py-12 bg-white flex flex-col items-center container">
       <h2
-        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
+        className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif uppercase"
         data-aos="fade-down"
       >
-        WASHERS
+        Anchor Bolts
       </h2>
       <p
         className="md:text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
@@ -46,7 +45,7 @@ const Washers = () => {
             className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
             data-aos="flip-right"
           >
-            <div className="bg-black py-3  md:py-6 text-center flex flex-col justify-between h-full">
+            <div className="bg-black py-3  md:py-6 text-center">
               <span className="md:text-2xl font-bold text-white font-serif">
                 {washer.name}
               </span>
@@ -54,7 +53,7 @@ const Washers = () => {
             <img
               src={washer.img}
               alt={washer.name}
-              className="w-full md:h-75 object-cover object-center"
+              className="w-full md:h-72 object-cover object-center"
               draggable="false"
             />
           </div>
@@ -64,4 +63,5 @@ const Washers = () => {
   );
 };
 
-export default Washers;
+export default AnchorBolts;
+

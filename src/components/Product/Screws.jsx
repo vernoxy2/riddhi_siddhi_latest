@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import selfTappingScrewImg from "../../assets/Products/selfTappingScrewImg.jpg";
-import machineScrewImg from "../../assets/Products/machineScrewImg.jpg";
+import selfTappingScrewImg from "../../assets/Products/SDAScrew1.webp";
+import universalClampImg  from "../../assets/Products/universalClampImg1.webp";
 import woodScrewImg from "../../assets/Products/woodScrewImg.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const screws = [
-  { name: "SELF-TAPPING SCREW", img: selfTappingScrewImg },
-  { name: "MACHINE SCREW", img: machineScrewImg },
-  { name: "WOOD SCREW", img: woodScrewImg },
+  { name: "SELF-DRILLING SCREW", img: selfTappingScrewImg },
+  { name: "UNIVERSAL CLAMPS", img: universalClampImg },
+  { name: "PIN CLAMPS", img: woodScrewImg },
 ];
 
 const Screws = () => {
@@ -19,12 +19,12 @@ const Screws = () => {
     });
   }, []);
   return (
-    <div id="screws" className="w-full py-12 bg-white flex flex-col items-center container">
+    <div id="screws" className="w-full py-12 bg-white flex flex-col  items-center container">
       <h2
         className="text-2xl md:text-3xl font-bold text-center mb-4 font-serif"
         data-aos="fade-down"
       >
-        SCREWS
+        SCREWS AND CLAMPS
       </h2>
       <p
         className="md:text-lg text-center text-gray-800 mb-10 font-serif leading-snug"
@@ -40,11 +40,11 @@ const Screws = () => {
         {screws.map((screw, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+            className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col "
             data-aos="flip-left"
           >
-            <div className="bg-black py-3 md:py-6 text-center">
-              <span className="text-sm md:text-2xl font-bold text-white font-serif">
+            <div className="bg-black py-3 md:py-6 text-center flex flex-col justify-between h-full">
+              <span className="text-sm md:text-2xl font-bold text-white font-serif my-auto">
                 {screw.name}
               </span>
             </div>
@@ -52,7 +52,7 @@ const Screws = () => {
               <img
                 src={screw.img}
                 alt={screw.name}
-                className="w-full md:h-72 object-cover object-center"
+                className=" h-auto md:h-75 object-cover object-center "
                 draggable="false"
               />
             </div>

@@ -80,7 +80,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-  className={`lg:hidden bg-primary px-2 pt-2 pb-3 space-y-1 transition-all duration-300 ease-in-out transform origin-top ${
+  className={`xl:hidden bg-primary px-2 pt-2 pb-3 space-y-1 transition-all duration-300 ease-in-out transform origin-top ${
     isOpen ? 'scale-y-100 opacity-100 max-h-screen' : 'scale-y-0 opacity-0 max-h-0 overflow-hidden'
   }`}
 >
