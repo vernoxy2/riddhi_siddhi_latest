@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import nutImg from "../../assets/Home/Nutbolt.webp";
 import uboltImg from "../../assets/Home/UBolt.webp";
 import anchorFastner from "../../assets/Home/anchorFastnerImg.webp";
-import screws from "../../assets/Home/screws.webp";
+import screws from "../../assets/Home/SDA_Screw-done.webp";
 import threadedRodsImg from "../../assets/Home/threadedRodsImg.webp";
-import customFastenersImg1 from "../../assets/Home/customFastenersImg1.webp";
+import customFastenersImg1 from "../../assets/Home/Foundation_BOlt-done.webp";
 import { Link } from "react-router-dom";
 
 import AOS from "aos";
