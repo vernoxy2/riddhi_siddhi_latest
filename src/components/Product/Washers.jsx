@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import plainWasherImg from "../../assets/Products/plainWasherImG1.webp";
+import plainWasherImg from "../../assets/Products/plainWasherImg1.webp";
 import springWasher from "../../assets/Products/springWasherImg.webp";
 import hillSideWasher from "../../assets/Products/hillSideWasher1.webp";
 import taperWasher from "../../assets/Products/taperWasher1.webp";
