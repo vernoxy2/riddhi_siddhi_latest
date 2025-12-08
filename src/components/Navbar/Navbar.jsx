@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import logo from "../../assets/About/logo.svg";
-import { Link } from "react-router-dom";
+import Logo from "../../assets/RSLogo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +14,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 ">
             <NavLink to="/" className="focus:outline-none">
-              <span className="text-white text-3xl font-bold font-serif cursor-pointer">
-                <Link to="/">
-                  <img src={logo} alt="logo" 
-                    className="w-16 h-16 md:w-24 md:h-20"
-                  />
-                </Link>
-              </span>
+              <img src={Logo} alt="Logo" className="h-14" />
             </NavLink>
           </div>
           {/* Desktop Menu */}

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import homeHeader from "../../assets/About/bgImg.webp";
+import homeHeader from "../../assets/Home/HeroHead.webp";
 import aboutSectionImg from "../../assets/Home/aboutSectionImg.jpg";
 
 import Industries from "../../components/Industries/Industries";
@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="relative w-full h-[210px] md:h-[400px] max-w-full xl:h-[70vh]  flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
+        className="relative w-full h-[210px] md:h-[400px] max-w-full xl:h-[80vh]  flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         data-aos="fade-up"
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
