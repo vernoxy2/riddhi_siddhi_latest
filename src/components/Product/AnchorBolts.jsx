@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/pinType.webp";
 import springWasherImg from "../../assets/Products/springWasherImg.webp";
 import uBoltImg from "../../assets/Products/uBolt1.webp";
-import ravalBoltImg from "../../assets/Products/ravalBoltImg.webp";
+import HeavyDutyImg from "../../assets/Products/HeavyDutyImg.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
-  { name: "PIN BOLT", img: plainWasherImg },
-  { name: "WEDGE BOLT", img: springWasherImg },
-  { name: "RAVAL BOLT", img: ravalBoltImg },
+  { name: "PIN ANCHOR", img: plainWasherImg },
+  { name: "WEDGE/SOLID ANCHOR", img: springWasherImg },
+  { name: "HAVYDUTY ANCHOR", img: HeavyDutyImg },
   {name : "U BOLT", img: uBoltImg}
 ];
 
@@ -45,15 +45,15 @@ const AnchorBolts = () => {
             className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
             data-aos="flip-right"
           >
-            <div className="bg-black py-3  md:py-6 text-center">
-              <span className="md:text-2xl font-bold text-white font-serif">
+            <div className="bg-black py-3 md:py-6 text-center flex flex-col justify-between h-full">
+              <span className="md:text-xl font-bold text-white font-serif">
                 {washer.name}
               </span>
             </div>
             <img
               src={washer.img}
               alt={washer.name}
-              className="w-full md:h-72 object-cover object-center"
+              className="w-full md:h-72 object-cover object-center "
               draggable="false"
             />
           </div>

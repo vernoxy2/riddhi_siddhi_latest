@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import homeHeader from "../../assets/About/img11.png";
+import homeHeader from "../../assets/About/bgImg.webp";
 import aboutSectionImg from "../../assets/Home/aboutSectionImg.jpg";
 
 import Industries from "../../components/Industries/Industries";

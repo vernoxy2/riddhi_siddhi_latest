@@ -49,13 +49,14 @@ const Nuts = () => {
             data-aos="flip-left"
           >
             <div className="bg-black py-3 md:py-6 text-center">
-              <span className="md:text-2xl font-bold text-white font-serif">
+              <span className="md:text-xl font-bold text-white font-serif">
                 {nut.name}
               </span>
             </div>
             <img
               src={nut.img}
               alt={nut.name}
+              loading="lazy"
               className="w-full md:h-72  object-cover object-center"
               draggable="false"
             />
