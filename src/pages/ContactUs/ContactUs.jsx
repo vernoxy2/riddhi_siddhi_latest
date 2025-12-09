@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import contactUsImg from "../../assets/Contact/contactHeaderImg.jpg";
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
@@ -8,9 +8,70 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ContactUs = () => {
+  // FormData
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  // Error
+  const [errors, setErrors] = useState("");
+  // Success
+  const [success, setSuccess] = useState("");
+
+  // Handle Change
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+
+    // Name validation
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    // Email validation
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+    }
+
+    // Message validation
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+
+    // If no errors, return true
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // Handle Submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      console.log("Form submitted successfully", formData);
+
+      // Reset form
+      setFormData({ name: "", email: "", message: "" });
+      setErrors({});
+
+      // Set success message
+      setSuccess("Your message has been sent successfully!");
+
+      // Optionally, clear success message after 3 seconds
+      setTimeout(() => setSuccess(""), 3000);
+    }
+  };
+
   useEffect(() => {
     AOS.init({
-      once: false, // whether animation should happen only once
+      once: false,
     });
   }, []);
   return (
@@ -52,34 +113,12 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
-                {/* Email icon */}
-                {/* <svg
-                  className="w-6 h-6 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M4 4h16v16H4z" stroke="none" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg> */}
                 <IoMdMail className="w-6 h-6" />
               </span>
               rsenterprice4275@gmail.com
             </div>
             <div className="flex items-center mb-4 text-lg">
               <span className="mr-3">
-                {/* Location icon */}
-                {/* <svg
-                  className="w-6 h-6 inline"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 21c-4.418 0-8-5.373-8-10A8 8 0 0 1 20 11c0 4.627-3.582 10-8 10z" />
-                  <circle cx="12" cy="11" r="3" />
-                </svg> */}
                 <FaLocationDot className="w-6 h-6" />
               </span>
               <span className="text-base md:text-lg">
@@ -89,7 +128,15 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Right: Form */}
-          <form className="flex-1 flex flex-col gap-6 justify-center">
+          <form
+            onSubmit={handleSubmit}
+            className="flex-1 flex flex-col gap-6 justify-center"
+          >
+            {success && (
+              <div className="fixed top-5 right-5 bg-gray-100 text-green-500 px-6 py-4 rounded-lg shadow-lg z-50 animate-fade-in border border-gray-600">
+                Your message has been sent successfully!
+              </div>
+            )}
             <div>
               <label
                 className="block text-xl font-bold mb-2 font-serif"
@@ -101,8 +148,13 @@ const ContactUs = () => {
                 id="name"
                 type="text"
                 placeholder="What's Your Name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black text-lg"
               />
+              {errors.name && (
+                <p className="text-red-500 mt-1">{errors.name}</p>
+              )}
             </div>
             <div>
               <label
@@ -115,8 +167,13 @@ const ContactUs = () => {
                 id="email"
                 type="email"
                 placeholder="Enter Your Email Address"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black text-lg"
               />
+              {errors.email && (
+                <p className="text-red-500 mt-1">{errors.email}</p>
+              )}
             </div>
             <div>
               <label
@@ -129,8 +186,13 @@ const ContactUs = () => {
                 id="message"
                 rows={4}
                 placeholder="Enter your message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black text-lg"
               />
+              {errors.message && (
+                <p className="text-red-500 mt-1">{errors.message}</p>
+              )}
             </div>
             <button
               type="submit"
