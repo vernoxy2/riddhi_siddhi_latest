@@ -12,6 +12,7 @@ import Assurance from "../../components/Abouts/Assurance";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
+import MissionVision from "../../components/Abouts/MissionVision";
 
 const aboutCards = [
   {
@@ -85,7 +86,7 @@ const AboutUs = () => {
 
   const navigate = useNavigate();
   const [hoveredIdx, setHoveredIdx] = useState(null);
-  
+
   return (
     <div className="w-full max-h-full min-h-screen items-center justify-center bg-white overflow-x-hidden">
       <img
@@ -166,45 +167,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Mission Vision Values Section */}
-      <div className="container mx-auto py-8 md:py-16 space-y-4 md:space-y-12">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-center font-serif"
-          data-aos="fade-up"
-        >
-          Company Mission, Vision and Values
-        </h2>
-
-        <p className="text-center text-lg" data-aos="fade-down">
-          Defining our mission, vision, and values for purposeful growth.
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-6 px-4">
-          {missionVisionValues.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl shadow-lg flex flex-col items-center p-4 transition-all duration-300"
-              style={{ width: "320px", minHeight: "500px" }}
-              data-aos="flip-right"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="object-contain w-full max-h-60"
-              />
-              <div className="flex flex-col items-center px-2 mt-4 flex-1">
-                <h3 className="text-xl font-bold font-serif mb-2 text-center text-primary">
-                  {item.title}
-                </h3>
-                <p className="text-base text-center text-gray-700">
-                  {item.content}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
+      <MissionVision />
       <Work />
       <Assurance />
 
