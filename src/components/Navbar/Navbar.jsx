@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 ">
             <NavLink to="/" className="focus:outline-none">
               <img src={Logo} alt="Logo" className="h-14" />
             </NavLink>
@@ -60,13 +60,13 @@ const Navbar = () => {
             >
               Contact Us
             </NavLink>
-            <a
+            {/* <a
               href="/brochure.pdf"
               download
               className="ml-8 px-8 py-3 border-2 border-white text-white text-xl font-semibold rounded-lg transition hover:bg-white hover:text-red-700"
             >
               Download Brochure
-            </a>
+            </a> */}
           </div>
           {/* Mobile menu button */}
           <div className="xl:hidden flex items-center">
@@ -156,13 +156,13 @@ const Navbar = () => {
           >
             Contact Us
           </NavLink>
-          <a
+          {/* <a
             href="/brochure.pdf"
             download
             className="block mt-2 px-8 py-3 border-2 border-white text-white text-lg font-semibold rounded-lg transition hover:bg-white hover:text-red-700 text-center"
           >
             Download Brochure
-          </a>
+          </a> */}
         </div>
       )}
     </nav>

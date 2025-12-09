@@ -44,7 +44,7 @@ const Screws = () => {
             data-aos="flip-left"
           >
             <div className="bg-black py-3 md:py-6 text-center flex flex-col justify-between h-full">
-              <span className="text-sm md:text-2xl font-bold text-white font-serif my-auto">
+              <span className="text-sm md:text-xl font-bold text-white font-serif my-auto">
                 {screw.name}
               </span>
             </div>

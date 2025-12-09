@@ -49,7 +49,7 @@ const Bolts = () => {
             data-aos="flip-right"
           >
             <div className="bg-black py-3 md:py-6 text-center">
-              <span className="md:text-2xl font-bold text-white font-serif">
+              <span className="md:text-xl font-bold text-white font-serif">
                 {bolt.name}
               </span>
             </div>

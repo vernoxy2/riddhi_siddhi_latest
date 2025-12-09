@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import productsImg from "../../assets/Products/productsHeaderImg.png";
+import productsImg from "../../assets/Products/productsImg.webp";
 import Nuts from "../../components/Product/Nuts";
 import Bolts from "../../components/Product/Bolts";
 import Screws from "../../components/Product/Screws";

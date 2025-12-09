@@ -47,7 +47,7 @@ const Washers = () => {
             data-aos="flip-right"
           >
             <div className="bg-black py-3  md:py-6 text-center flex flex-col justify-between h-full">
-              <span className="md:text-2xl font-bold text-white font-serif">
+              <span className="md:text-xl font-bold text-white font-serif">
                 {washer.name}
               </span>
             </div>

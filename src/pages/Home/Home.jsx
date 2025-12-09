@@ -31,6 +31,7 @@ const Home = () => {
       <div
         className="relative w-full h-[210px] md:h-[400px] max-w-full xl:h-[80vh]  flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         data-aos="fade-up"
+        
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
@@ -62,6 +63,7 @@ const Home = () => {
           >
             <img
               src={aboutSectionImg}
+              loading="lazy"
               alt="About Riddhi Siddhi"
               className="rounded-xl shadow-lg object-cover w-full max-w-xs sm:max-w-md md:max-w-xl lg:w-full h-[220px] sm:h-[320px] md:h-[400px] lg:h-[480px]"
             />
