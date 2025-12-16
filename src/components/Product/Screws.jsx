@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import selfTappingScrewImg from "../../assets/Products/SDAScrew1.webp";
 import universalClampImg  from "../../assets/Products/universalClampImg1.webp";
 import woodScrewImg from "../../assets/Products/woodScrewImg.jpg";
+import uBoltImg from "../../assets/Products/uBolt1.webp";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,7 +11,9 @@ import "aos/dist/aos.css";
 const screws = [
   { name: "SELF-DRILLING SCREW", img: selfTappingScrewImg },
   { name: "UNIVERSAL CLAMPS", img: universalClampImg },
-  { name: "PIN CLAMPS", img: woodScrewImg },
+  // { name: "PIN CLAMPS", img: woodScrewImg },
+    {name : "U BOLT", img: uBoltImg}
+  
 ];
 
 const Screws = () => {

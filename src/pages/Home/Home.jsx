@@ -35,10 +35,11 @@ const Home = () => {
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
-          className="ml-2 sm:ml-4 lg:ml-16 max-w-xl bg-black bg-opacity-0 p-5 lg:p-8 rounded-lg flex flex-col items-start w-full gap-2 sm:gap-4  "
+          className="ml-2 sm:ml-4 lg:ml-16 max-w-2xl bg-black bg-opacity-0 p-5 lg:p-8 rounded-lg flex flex-col items-start w-full gap-2 sm:gap-4  "
           data-aos="fade-right"
         >
-          <h1 className="text-xl sm:text-2xl md:text-5xl font-bold  text-black font-serif">
+          <h1 className="text-xl sm:text-2xl md:text-5xl font-medium  text-black font-serif">
+            <span className="text-primary font-bold text-xl sm:text-2xl md:text-5xl">Riddhi Siddhi Enterprise</span>{" "}
             Your Trusted Stockist for Industrial Fasteners
           </h1>
           <p className="text-sm sm:text-base md:text-2xl text-black font-serif">

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/pinType.webp";
 import springWasherImg from "../../assets/Products/springWasherImg.webp";
-import uBoltImg from "../../assets/Products/uBolt1.webp";
 import HeavyDutyImg from "../../assets/Products/HeavyDutyImg.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,8 +8,7 @@ import "aos/dist/aos.css";
 const washers = [
   { name: "PIN ANCHOR", img: plainWasherImg },
   { name: "WEDGE/SOLID ANCHOR", img: springWasherImg },
-  { name: "HAVYDUTY ANCHOR", img: HeavyDutyImg },
-  {name : "U BOLT", img: uBoltImg}
+  { name: "HEAVY DUTY ANCHOR", img: HeavyDutyImg },
 ];
 
 const AnchorBolts = () => {
@@ -38,7 +36,7 @@ const AnchorBolts = () => {
         ensuring durability, corrosion resistance, and optimal performance in
         any application.
       </p>
-      <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-10">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:px-10">
         {washers.map((washer, idx) => (
           <div
             key={idx}
@@ -53,7 +51,7 @@ const AnchorBolts = () => {
             <img
               src={washer.img}
               alt={washer.name}
-              className="w-full md:h-72 object-cover object-center "
+              className="w-full  object-cover object-center "
               draggable="false"
             />
           </div>

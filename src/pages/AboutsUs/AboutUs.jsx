@@ -34,10 +34,10 @@ const aboutCards = [
     content: (
       <ul className="list-disc pl-5">
         <li>Nuts & Bolts – Hex, Dome, Lock.</li>
-        <li>Screws – Self-tapping, Machine.</li>
+        <li>Screws – Self-drilling, Machine.</li>
         <li>Washers</li>
         <li>Threaded Rods & Studs</li>
-        <li>Custom Fasteners – MS, SS 304/316, 8.8 & 10.9 Grade, GI</li>
+        <li>Custom Fasteners – MS, SS 202, 304/316, 8.8 & 10.9 Grade, GI</li>
       </ul>
     ),
   },
