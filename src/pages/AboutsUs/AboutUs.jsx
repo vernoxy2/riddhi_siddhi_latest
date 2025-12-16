@@ -5,7 +5,7 @@ import img2 from "../../assets/About/img2.png";
 import img3 from "../../assets/About/img3.png";
 import vision from "../../assets/About/vision.png";
 import mission from "../../assets/About/mission.png";
-import core from "../../assets/About/Core.png";
+import core from "../../assets/About/Img.png";
 import Work from "../../components/Abouts/Work";
 import Assurance from "../../components/Abouts/Assurance";
 
