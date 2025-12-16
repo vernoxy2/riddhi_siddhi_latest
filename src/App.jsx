@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     Aos.init({
       duration: 1200,
-      once: false, // Ensures animation only runs once
+      once: true, // Ensures animation only runs once
       offset: 200, // Controls when the animation triggers
     });
   }, []);
