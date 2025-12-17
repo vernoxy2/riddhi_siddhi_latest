@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import plainWasherImg from "../../assets/Products/pinType.webp";
-import springWasherImg from "../../assets/Products/springWasherImg.webp";
+import WedgeAnchor from "../../assets/Products/WedgeAnchor.webp";
 import HeavyDutyImg from "../../assets/Products/HeavyDutyImg.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const washers = [
   { name: "PIN ANCHOR", img: plainWasherImg },
-  { name: "WEDGE/SOLID ANCHOR", img: springWasherImg },
+  { name: "WEDGE/SOLID ANCHOR", img: WedgeAnchor },
   { name: "HEAVY DUTY ANCHOR", img: HeavyDutyImg },
 ];
 
