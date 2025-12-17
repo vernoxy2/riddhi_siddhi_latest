@@ -39,7 +39,7 @@ const Home = () => {
           data-aos="fade-right"
         >
           <h1 className="text-xl sm:text-2xl md:text-5xl font-medium  text-black font-serif">
-            <span className="text-primary font-bold text-xl sm:text-2xl md:text-5xl">Riddhi Siddhi Enterprise</span>{" "}
+            <span className="text-primary font-bold text-xl sm:text-2xl md:text-5xl">Riddhi Siddhi Enterprise</span>{" "} <br className="lg:hidden" />
             Your Trusted Stockist for Industrial Fasteners
           </h1>
           <p className="text-sm sm:text-base md:text-2xl text-black font-serif">
