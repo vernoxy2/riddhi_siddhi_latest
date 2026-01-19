@@ -13,6 +13,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 import MissionVision from "../../components/Abouts/MissionVision";
+import { useMetaTags } from "../../hooks/useMetaTags";
 
 const aboutCards = [
   {
@@ -78,6 +79,15 @@ const missionVisionValues = [
 ];
 
 const AboutUs = () => {
+  useMetaTags({
+    title: "About Riddhi Siddhi Enterprise | Fastener Stockist in Gujarat",
+    description:
+      "Riddhi Siddhi Enterprise is a Vapi-based fastener stockist supplying quality industrial fasteners with ready stock, competitive pricing, and timely delivery across India.",
+    keywords:
+      "about fastener company, fastener supplier Gujarat, fastener wholesaler India, industrial fasteners Vapi",
+    url: "https://www.rseent.com/about",
+    type: "website",
+  });
   useEffect(() => {
     AOS.init({
       once: false, // whether animation should happen only once

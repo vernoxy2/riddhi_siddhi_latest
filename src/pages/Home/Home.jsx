@@ -15,8 +15,19 @@ import ourStrength4 from "../../assets/Home/ourStrength4.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
+import { useMetaTags } from "../../hooks/useMetaTags";
 
 const Home = () => {
+  useMetaTags({
+    title:
+      "Industrial Fasteners Stockist & Wholesaler in India | Riddhi Siddhi Enterprise",
+    description:
+      "Riddhi Siddhi Enterprise is a trusted stockist and wholesaler of industrial fasteners in Vapi, Gujarat. Supplying nuts, bolts, screws, washers, GI, MS, SS & high tensile fasteners across India.",
+    keywords:
+      "industrial fasteners, fastener stockist, fastener wholesaler, nuts bolts screws supplier, GI MS SS fasteners, high tensile fasteners, fastener supplier India, fastener stockist Vapi, Riddhi Siddhi Enterprise",
+    url: "https://www.rseent.com/",
+    type: "website",
+  });
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -31,7 +42,6 @@ const Home = () => {
       <div
         className="relative w-full h-[210px] md:h-[400px] max-w-full xl:h-[80vh]  flex items-start md:items-center justify-start bg-cover bg-center font-serif px-2 sm:px-4 md:px-8 overflow-x-hidden"
         data-aos="fade-up"
-        
         style={{ backgroundImage: `url(${homeHeader})` }}
       >
         <div
@@ -39,12 +49,15 @@ const Home = () => {
           data-aos="fade-right"
         >
           <h1 className="text-xl sm:text-2xl md:text-5xl font-medium  text-black font-serif">
-            <span className="text-primary font-bold text-xl sm:text-2xl md:text-5xl">Riddhi Siddhi Enterprise</span>{" "} <br className="lg:hidden" />
+            <span className="text-primary font-bold text-xl sm:text-2xl md:text-5xl">
+              Riddhi Siddhi Enterprise
+            </span>{" "}
+            <br className="lg:hidden" />
             Your Trusted Stockist for Industrial Fasteners
           </h1>
           <p className="text-sm sm:text-base md:text-2xl text-black font-serif">
-            Explore Our Range of Industrial Nuts, Bolts, Washer, Screws and other fastners in GI, MS, SS &
-            High Tensile.
+            Explore Our Range of Industrial Nuts, Bolts, Washer, Screws and
+            other fastners in GI, MS, SS & High Tensile.
           </p>
           <button
             onClick={() => navigate("/contact")}
@@ -58,10 +71,7 @@ const Home = () => {
       <div className="w-full container flex flex-col items-center py-8 sm:py-12 overflow-x-hidden">
         <div className=" w-full grid grid-cols-1 xl:grid-cols-2 gap-8  items-center">
           {/* Image Section */}
-          <div
-            className="flex justify-center"
-            data-aos="fade-right"
-          >
+          <div className="flex justify-center" data-aos="fade-right">
             <img
               src={aboutSectionImg}
               loading="lazy"
@@ -154,7 +164,10 @@ const Home = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-center text-black mb-6 leading-snug">
           Your Vision, Our Expertise – Free Quotes at Your Fingertips!
         </h2>
-        <button onClick={() => navigate("/contact")} className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm lg:text-2xl">
+        <button
+          onClick={() => navigate("/contact")}
+          className="text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-300 font-semibold px-6 py-2 rounded-full text-sm lg:text-2xl"
+        >
           GET A QUOTE
         </button>
       </section>

@@ -6,8 +6,18 @@ import { FaLocationDot } from "react-icons/fa6";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useMetaTags } from "../../hooks/useMetaTags";
 
 const ContactUs = () => {
+  useMetaTags({
+    title: "Contact Riddhi Siddhi Enterprise | Fastener Supplier India",
+    description:
+      "Contact Riddhi Siddhi Enterprise for bulk industrial fasteners. Based in Vapi, Gujarat, we deliver fastener solutions across India.",
+    keywords:
+      "contact fastener supplier, fastener dealer Vapi, industrial fasteners contact India",
+    url: "https://www.rseent.com/contact",
+    type: "website",
+  });
   // FormData
   const [formData, setFormData] = useState({
     name: "",

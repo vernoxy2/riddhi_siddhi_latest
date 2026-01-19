@@ -7,8 +7,16 @@ import Washers from "../../components/Product/Washers";
 import AnchorBolts from "../../components/Product/AnchorBolts";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useMetaTags } from "../../hooks/useMetaTags";
 
 const Products = () => {
+  useMetaTags({
+    title:'Industrial Nuts, Bolts, Screws & Washers | Our Products',
+    description:'Explore our wide range of industrial nuts, bolts, screws, washers, and threaded rods in GI, MS, SS & high tensile materials meeting IS, DIN & ASTM standards.',
+    keywords:'industrial nuts bolts, screws supplier, washer supplier, threaded rods, GI fasteners, MS fasteners, SS fasteners, DIN fasteners, ASTM fasteners',
+    url:'https://www.rseent.com/products',
+    type:'website'
+  })
   useEffect(() => {
     AOS.init({
       once: false, // whether animation should happen only once

@@ -13,7 +13,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 ">
-            <NavLink to="/" className="focus:outline-none">
+            <NavLink
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth", block: "start" });
+              }}
+              to="/"
+              className="focus:outline-none"
+            >
               <img src={Logo} alt="Logo" className="h-14" />
             </NavLink>
           </div>
