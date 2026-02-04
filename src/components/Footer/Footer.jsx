@@ -205,9 +205,9 @@ const Footer = () => {
         </div>
       </div>
       {/* Copyright */}
-      <div className="text-center text-white text-md font-bold mt-8">
-        © 2025 Vernoxy. All rights reserved.
-      </div>
+      <p className="text-center pt-4 sm:pt-5 md:pt-6 text-white/80 text-sm  mt-auto">
+            © {new Date().getFullYear()} Developed by @Vernoxy
+          </p>
     </footer>
   );
 };
