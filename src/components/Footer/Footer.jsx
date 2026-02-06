@@ -206,7 +206,7 @@ const Footer = () => {
       </div>
       {/* Copyright */}
       <p className="text-center pt-4 sm:pt-5 md:pt-6 text-white/80 text-sm  mt-auto">
-            © {new Date().getFullYear()} Developed by @Vernoxy
+            © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
           </p>
     </footer>
   );
