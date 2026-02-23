@@ -7,7 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Logo from "./assets/RSLogo.svg";
+import Logo from "./assets/RRSLogo.svg";
 
 
 // Lazy Load Pages
@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => {
     Aos.init({
       duration: 1200,
-      once: true,
+      // once: true,
       offset: 200,
     });
   }, []);

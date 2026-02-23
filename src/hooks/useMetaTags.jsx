@@ -4,7 +4,7 @@ export const useMetaTags = ({
   title,
   description,
   keywords,
-  image = "../../public/WebLogo.svg",
+  image = "../../public/RRRSLogo.svg",
   url,
   type = 'website'
 }) => {

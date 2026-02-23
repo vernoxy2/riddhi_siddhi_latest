@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Logo from "../../assets/RSLogo.png";
+import Logo from "../../assets/RSLogo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
